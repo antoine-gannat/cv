@@ -1,0 +1,147 @@
+/* Body */
+
+/* Smooth scroll using the nav bar */
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Roboto Slab', serif;
+    overflow-x: hidden;
+    background-color: #F9EAE1;
+}
+
+.line {
+    position: absolute;
+    width: 100px;
+    border-bottom: solid 1px white;
+}
+
+/* Navbar styles */
+
+.left-nav {
+    position: fixed;
+    z-index: 1;
+    /* Stay on top */
+    top: 0;
+    /* Stay at the top */
+    left: 0;
+    background-color: #243665;
+    padding: 0;
+    height: 100%;
+    padding-top: 70px;
+}
+
+.left-nav-link {
+    padding-right: 0;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 0;
+    margin-bottom: 30px;
+    color: white;
+    background-color: inherit;
+    border: none;
+    width: inherit;
+    font-size: 35px;
+}
+
+.left-nav-link:hover {
+    background: #2d4480;
+}
+
+.left-nav-link:hover .left-nav-link-text {
+    opacity: 1;
+    position: relative;
+}
+
+.left-nav-link-text {
+    opacity: 0;
+    vertical-align: middle;
+    position: absolute;
+    font-weight: bold;
+    font-size: 17px;
+    transition: opacity 300ms;
+    transition: position 400ms;
+}
+
+/* Main */
+
+.main {
+    padding-left: 0;
+}
+
+/* Sections */
+
+.section {
+    color: white;
+    min-height: 50vh;
+    width: 100%;
+    padding: 3em;
+}
+
+.section-title {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 1em;
+    border-bottom: 5px solid #ca5e1f;
+    display: inline-block;
+    padding-bottom: 5px;
+    font-family: sans-serif;
+}
+
+.section-pair {
+    color: black;
+    background-color: #F9EAE1;
+}
+
+.section-impair {
+    color: black;
+    background-color: #E9D2C0;
+}
+
+/* About me */
+
+.parallax {
+    /* The image used */
+    background-image: url('../images/landscape.jpg');
+    /* Full height */
+    height: 450px;
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    /* background-position: center; */
+    background-repeat: no-repeat;
+}
+
+#aboutme {
+    margin-top: -230px;
+    background-color: rgba(0, 0, 0, 0);
+}
+
+.header-title {
+    position: absolute;
+    color: white;
+    top: 130px;
+    font-size: 50px;
+    text-align: center;
+    width: 100%;
+}
+
+.header-subtitle {
+    font-size: 35px;
+}
+
+.profile-picture {
+    border-radius: 130px;
+    border-color: white;
+    border-width: 4px;
+    border-style: solid;
+}
+
+.about-me-text {
+    margin-top: 1em;
+    text-align: center;
+    font-size: 25px;
+}
+
+/* Employment */
