@@ -14,10 +14,10 @@
     <link href="https://fonts.googleapis.com/css?family=Roboto+Slab&display=swap" rel="stylesheet">
 </head>
 
-<body data-spy="scroll" data-target=".left-nav" data-offset="550">
-    <div class="row">
+<body data-spy="scroll" data-target=".left-nav" data-offset="450">
+    <div class="row" id="top">
         <nav class="col-lg-1 col-md-2 col-sm-12 left-nav">
-            <a href="#aboutme" class="btn btn-primary nav-link left-nav-link">
+            <a href="#top" class="btn btn-primary nav-link left-nav-link">
                 <i class="fas fa-user-circle"></i>
                 <span class="left-nav-link-text">About me</span>
             </a>
@@ -63,29 +63,65 @@
                             <!--Experience Items-->
                             <li>
                                 <div class="point"></div>
-                                <div class="bubble">
+                                <div class="bubble row">
                                     <div class="bubble-arrow"></div>
-                                    <p class="date">Octobre 2017 - Février 2018</p>
-                                    <p class="name">Ecat-iD</p>
-                                    <p class="title"><b>Stage</b> | Développement de logiciels pour des machines présentes dans l'industrie de la volaille</p>
+                                    <div class="col-3">
+                                        <!-- <a href="https://www.genesys.com" target="_blank"><img class="logo" src="images/companies/genesys.png" /></a> -->
+                                    </div>
+                                    <div class="col-9">
+                                        <p class="name">Freelance</p>
+                                        <p class="title">Self employed. Development of all sort of software solutions.</p>
+                                        <hr />
+                                        <p class=" subjects">C++ / C# / .Net</p>
+                                        <p class="date">September 2019 - Today</p>
+                                    </div>
                                 </div>
                             </li>
                             <li class="odd">
                                 <div class="point"></div>
-                                <div class="bubble">
+                                <div class="bubble row">
                                     <div class="bubble-arrow"></div>
-                                    <p class="date">Juillet 2017 - Août 2017</p>
-                                    <p class="name">Sodise</p>
-                                    <p class="title"><b>Intérim</b> | Manutention</p>
+                                    <div class="col-3 logo-container">
+                                        <a href="https://www.genesys.com" target="_blank"><img class="logo" src="images/companies/genesys.png" /></a>
+                                    </div>
+                                    <div class="col-9">
+                                        <p class="name">Genesys, Guipava, France — Intern</p>
+                                        <p class="title">Development a webapp to analyse log files in order to detect unexpected trends. Interface for the users to write code to parse the file in a more convenient way.
+                                        </p>
+                                        <hr />
+                                        <p class="subjects">JS / NodeJS / VueJS / Monaco Editor</p>
+                                        <p class="date">September 2019 - February 2020</p>
+                                    </div>
                                 </div>
                             </li>
                             <li>
                                 <div class="point"></div>
-                                <div class="bubble">
+                                <div class="bubble row">
                                     <div class="bubble-arrow"></div>
-                                    <p class="date">Juillet 2016 - Décembre 2016</p>
-                                    <p class="name">Ecat-iD</p>
-                                    <p class="title"><b>Stage</b> | Développement de logiciels pour des machines présentes dans l'industrie de la volaille</p>
+                                    <div class="col-3 logo-container">
+                                        <a href="https://www.ecat-id.com/" target="_blank"><img class="logo" src="images/companies/ecatid.png" /></a>
+                                    </div>
+                                    <div class="col-9">
+                                        <p class="name">Ecat-ID, Landerneau, France — Intern R&D</p>
+                                        <p class="title">
+                                            Development of an image-processing software that classify chicks in sub-categories.
+                                            <br />
+                                            <br />
+                                            Research, development and installation of a data-collecting prototype for industrial machines, equipped with a website that give access to the data to the client.
+                                            <br />
+                                            <br />
+                                            Development and testing of a chick counter prototype using thermal imagery.
+                                            <br />
+                                            <br />
+                                            Development of a software for technician, allowing them to configure new machines faster.
+                                            <br />
+                                            <br />
+                                            Development of a C++ communications library using Modbus-TCP.
+                                        </p>
+                                        <hr />
+                                        <p class="subjects">C++ / NodeJS / OpenCV / Big Data / C Sockets / Windows API / Linux</p>
+                                        <p class="date">Octobre 2017 - Février 2018</p>
+                                    </div>
                                 </div>
                             </li>
                             <!--Experience Items-->
@@ -95,7 +131,42 @@
             </section>
             <section id="studies" class="section section-pair">
                 <h1 class="section-title">Studies</h1>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                <div class="university row">
+                    <div class="col-2 logo">
+                        <img src="images/companies/epitech.png" />
+                    </div>
+                    <div class="col-10">
+                        <h2>EPITECH - Rennes, France - Master</h2>
+                        <p class="date">September 2015 - July 2020</p>
+                        <p class="title">Master in computer science.</p>
+                        <p class="description">
+                            French university known for its intensive programming classes.<br />
+                            Development of more than 50 projects in group and by myself in a dozen of programing languages.
+                        </p>
+                    </div>
+                </div>
+                <div class="university row">
+                    <div class="col-2 logo">
+                        <img src="images/companies/csulb-dilated.png" />
+                    </div>
+                    <div class="col-10">
+                        <h2>California State University Long Beach - California, USA - Certificate</h2>
+                        <p class="date">October 2018 - May 2019</p>
+                        <p class="title">English certificate</p>
+                        <p class="description">
+                            Year abroad in California as part of my master’s degree.<br />
+                            Two semesters in the university with :<br />
+                            - English classes to improve my communications skills.<br />
+                            - Computer-science classes to learn more about some aspects of software development: <br />
+                            <ul>
+                                <li>Cyber-security</li>
+                                <li>Digital Signal Processing</li>
+                                <li>Development using ElectronJS</li>
+                                <li>Web Programming and Accessibility</li>
+                            </ul>
+                        </p>
+                    </div>
+                </div>
             </section>
             <section id="skills" class="section section-impair">
                 <h1 class="section-title">Skills</h1>
@@ -106,11 +177,22 @@
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
             </section>
             <section id="contact" class="section section-impair">
-                <h1 class="section-title">Contact me !</h1>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                <h1 class="section-title">Contact informations</h1>
+                <div class="contact-div text-center">
+                    <div>
+                        <i class="fas fa-at"></i> <span>antoine.gannat@gmail.com</span>
+                    </div>
+                    <div>
+                        <i class="fas fa-map-marker-alt"></i> <span>13 Rue Emile Souvestre, 29200 BREST</span><br />
+                    </div>
+                    <div>
+                        <i class="fas fa-phone-alt"></i> <span>(+33)06 32 76 83 60</span><br />
+                    </div>
+                </div>
             </section>
             <!-- Footer -->
-            <footer>
+            <footer class="footer">
+                <span class="copyright">© Antoine GANNAT 2019</span>
             </footer>
         </main>
     </div>

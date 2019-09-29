@@ -12,12 +12,6 @@ body {
     background-color: #F9EAE1;
 }
 
-.line {
-    position: absolute;
-    width: 100px;
-    border-bottom: solid 1px white;
-}
-
 /* Navbar styles */
 
 .left-nav {
@@ -48,6 +42,11 @@ body {
 
 .left-nav-link:hover {
     background: #2d4480;
+}
+
+.active .left-nav-link-text {
+    opacity: 1;
+    position: relative;
 }
 
 .left-nav-link:hover .left-nav-link-text {
@@ -97,14 +96,15 @@ body {
 
 .section-impair {
     color: black;
-    background-color: #E9D2C0;
+    background-color: rgb(235, 205, 182);
+    /* background-color: rgb(231, 203, 162); */
 }
 
 /* About me */
 
 .parallax {
     /* The image used */
-    background-image: url('../images/landscape.jpg');
+    background-image: url('../images/san-diego-beach.jpg');
     /* Full height */
     height: 450px;
     /* Create the parallax scrolling effect */
@@ -144,4 +144,69 @@ body {
     font-size: 25px;
 }
 
-/* Employment */
+/* Studies */
+
+.university {
+    margin: 2em;
+    background: #c96329;
+    padding: 1em;
+    border-radius: 6px;
+    color: white;
+    box-shadow: 1px 1px 1px black;
+}
+
+.university p {
+    font-size: 20px;
+}
+
+.university .date {
+    font-size: 18px;
+}
+
+.university .description {
+    font-size: 19px;
+}
+
+.university .title {
+    margin-bottom: 1em;
+    border-bottom: 2px solid white;
+    display: inline-block;
+    padding-bottom: 5px;
+}
+
+.university .logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.university .logo img {
+    width: 100%;
+}
+
+/* Contact */
+
+.contact-div {
+    font-size: 30px;
+    text-align: center;
+    padding: 0 3em 0 3em;
+}
+
+.contact-div div {
+    margin: .4em;
+}
+
+/* Footer */
+
+.footer {
+    height: 5vh;
+    padding: .2em 2em;
+    background-color: #243665;
+    font-size: 25px;
+    vertical-align: center;
+}
+
+.copyright {
+    float: right;
+    color: white;
+}
