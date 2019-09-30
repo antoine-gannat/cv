@@ -3,6 +3,8 @@
 
 <head>
     <title>CV of Antoine GANNAT</title>
+    <!-- Favicon -->
+    <link rel="icon" type="image/jpg" href="images/me.jpg" />
     <!-- Include font awesome -->
     <link rel="stylesheet" href="css/fontawesome.min.css">
     <!-- Include bootstrap -->
@@ -29,13 +31,13 @@
                 <i class="fas fa-graduation-cap"></i>
                 <span class="left-nav-link-text">Studies</span>
             </a>
-            <a href="#skills" class="btn btn-primary nav-link left-nav-link">
-                <i class="fas fa-code"></i>
-                <span class="left-nav-link-text">Skills</span>
-            </a>
             <a href="#projects" class="btn btn-primary nav-link left-nav-link">
                 <i class="fas fa-clipboard-check"></i>
                 <span class="left-nav-link-text">Projects</span>
+            </a>
+            <a href="#skills" class="btn btn-primary nav-link left-nav-link">
+                <i class="fas fa-code"></i>
+                <span class="left-nav-link-text">Skills</span>
             </a>
             <a href="#contact" class="btn btn-primary nav-link left-nav-link">
                 <i class="fas fa-id-card"></i>
@@ -49,44 +51,55 @@
             </h1>
             <div class="parallax"></div>
             <!-- Sections -->
+            <!-- About me -->
             <section id="aboutme" class="section section-pair">
                 <div class="text-center">
                     <img src="images/me.jpg" class="profile-picture" alt="me" />
                 </div>
-                <p class="about-me-text">Curious, dynamic and motivated, I’m passionate about new technologies, aerospatial and electronics. I’m looking for a new opportunity to challenge myself.</p>
+                <p class="about-me-text">Curious, dynamic and motivated, I’m passionate about new technologies,
+                    aerospatial and electronics. I’m looking for a new opportunity to challenge myself.</p>
             </section>
+            <!-- Employment-->
             <section id="employment" class="section section-impair">
                 <h1 class="section-title">Employment</h1>
                 <div class="row">
                     <div class="timeline">
                         <ul>
                             <!--Experience Items-->
-                            <li>
+                            <li class="col-md-12">
                                 <div class="point"></div>
                                 <div class="bubble row">
                                     <div class="bubble-arrow"></div>
-                                    <div class="col-3">
-                                        <!-- <a href="https://www.genesys.com" target="_blank"><img class="logo" src="images/companies/genesys.png" /></a> -->
+                                    <div class="col-lg-3 col-md-12 col-sm-12 logo-container">
+                                        <a href="https://www.linkedin.com/in/antoine-gannat/" target="_blank"><img
+                                                class="logo" src="images/companies/antoine-gannat.png" /></a>
                                     </div>
-                                    <div class="col-9">
-                                        <p class="name">Freelance</p>
-                                        <p class="title">Self employed. Development of all sort of software solutions.</p>
+                                    <div class="col-lg-9 col-md-12 col-sm-12">
+                                        <p class="name">Freelance — Self employed</p>
+                                        <p class="title">Development of all sort of software solutions for companies
+                                            alongside my studies.
+                                        </p>
                                         <hr />
                                         <p class=" subjects">C++ / C# / .Net</p>
                                         <p class="date">September 2019 - Today</p>
                                     </div>
                                 </div>
                             </li>
-                            <li class="odd">
+                            <li class="odd col-md-12">
                                 <div class="point"></div>
                                 <div class="bubble row">
                                     <div class="bubble-arrow"></div>
-                                    <div class="col-3 logo-container">
+                                    <div class="col-lg-3 col-md-12 col-sm-12 logo-container">
                                         <a href="https://www.genesys.com" target="_blank"><img class="logo" src="images/companies/genesys.png" /></a>
                                     </div>
-                                    <div class="col-9">
+                                    <div class="col-lg-9 col-md-12 col-sm-12">
                                         <p class="name">Genesys, Guipava, France — Intern</p>
-                                        <p class="title">Development a webapp to analyse log files in order to detect unexpected trends. Interface for the users to write code to parse the file in a more convenient way.
+                                        <p class="title">Development and upgrade of tools and softwares related to
+                                            contact
+                                            centers.<br /><br />
+                                            Dockerization, implementation of unit tests and documentation of the
+                                            project.
+
                                         </p>
                                         <hr />
                                         <p class="subjects">JS / NodeJS / VueJS / Monaco Editor</p>
@@ -94,32 +107,37 @@
                                     </div>
                                 </div>
                             </li>
-                            <li>
+                            <li class="col-md-12">
                                 <div class="point"></div>
                                 <div class="bubble row">
                                     <div class="bubble-arrow"></div>
-                                    <div class="col-3 logo-container">
+                                    <div class="col-lg-3 col-md-12 col-sm-12 logo-container">
                                         <a href="https://www.ecat-id.com/" target="_blank"><img class="logo" src="images/companies/ecatid.png" /></a>
                                     </div>
-                                    <div class="col-9">
+                                    <div class="col-lg-9 col-md-12 col-sm-12">
                                         <p class="name">Ecat-ID, Landerneau, France — Intern R&D</p>
                                         <p class="title">
-                                            Development of an image-processing software that classify chicks in sub-categories.
+                                            Development of an image-processing software that classify chicks in
+                                            sub-categories.
                                             <br />
                                             <br />
-                                            Research, development and installation of a data-collecting prototype for industrial machines, equipped with a website that give access to the data to the client.
+                                            Research, development and installation of a data-collecting prototype for
+                                            industrial machines, equipped with a website that give access to the data
+                                            to the client.
                                             <br />
                                             <br />
                                             Development and testing of a chick counter prototype using thermal imagery.
                                             <br />
                                             <br />
-                                            Development of a software for technician, allowing them to configure new machines faster.
+                                            Development of a software for technicians, allowing them to set up new
+                                            machines faster.
                                             <br />
                                             <br />
                                             Development of a C++ communications library using Modbus-TCP.
                                         </p>
                                         <hr />
-                                        <p class="subjects">C++ / NodeJS / OpenCV / Big Data / C Sockets / Windows API / Linux</p>
+                                        <p class="subjects">C++ / NodeJS / OpenCV / Big Data / C Sockets / Windows API
+                                            / Linux</p>
                                         <p class="date">Octobre 2017 - Février 2018</p>
                                     </div>
                                 </div>
@@ -129,27 +147,29 @@
                     </div>
                 </div>
             </section>
+            <!-- Studies-->
             <section id="studies" class="section section-pair">
                 <h1 class="section-title">Studies</h1>
                 <div class="university row">
-                    <div class="col-2 logo">
+                    <div class="col-lg-2 col-md-12 col-sm-12 logo">
                         <img src="images/companies/epitech.png" />
                     </div>
-                    <div class="col-10">
+                    <div class="col-lg-10 col-md-12 col-sm-12">
                         <h2>EPITECH - Rennes, France - Master</h2>
                         <p class="date">September 2015 - July 2020</p>
                         <p class="title">Master in computer science.</p>
                         <p class="description">
                             French university known for its intensive programming classes.<br />
-                            Development of more than 50 projects in group and by myself in a dozen of programing languages.
+                            Development of more than 50 projects in group and by myself in a dozen of programing
+                            languages.
                         </p>
                     </div>
                 </div>
                 <div class="university row">
-                    <div class="col-2 logo">
+                    <div class="col-lg-2 col-md-12 col-sm-12 logo">
                         <img src="images/companies/csulb.png" />
                     </div>
-                    <div class="col-10">
+                    <div class="col-lg-10 col-md-12 col-sm-12">
                         <h2>California State University Long Beach - California, USA - Certificate</h2>
                         <p class="date">October 2018 - May 2019</p>
                         <p class="title">English certificate</p>
@@ -168,11 +188,24 @@
                     </div>
                 </div>
             </section>
-            <section id="skills" class="section section-impair">
+            <!-- Projects-->
+            <section id="projects" class="section section-impair">
+                <h1 class="section-title">Projects</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                    et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                    aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                    cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+                    culpa qui officia deserunt mollit anim id est laborum.</p>
+            </section>
+            <!-- Skills -->
+            <section id="skills" class="section section-pair">
                 <h1 class="section-title">Skills</h1>
                 <div class="container">
                     <div>
                         <h3>Programming</h3>
+                        <ul>
+                            <li></li>
+                        </ul>
                     </div>
                     <hr />
                     <div>
@@ -184,10 +217,7 @@
                     </div>
                 </div>
             </section>
-            <section id="projects" class="section section-pair">
-                <h1 class="section-title">Projects</h1>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-            </section>
+            <!-- Contact-->
             <section id="contact" class="section section-impair">
                 <h1 class="section-title">Contact informations</h1>
                 <div class="contact-div text-center">
@@ -209,8 +239,10 @@
         </main>
     </div>
     <!-- Bootstrap dependencies -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
     <!-- Bootstrap script -->
     <script src="js/bootstrap.min.js"></script>
 </body>
