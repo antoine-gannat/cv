@@ -12,6 +12,15 @@ body {
     background-color: #F9EAE1;
 }
 
+/* Hide the border from the table */
+.border-less-table{
+    border-collapse:collapse;
+}
+
+.border-less-table td{
+    border:none;
+}
+
 /* Navbar styles */
 
 .left-nav {
@@ -195,6 +204,45 @@ body {
     align-items: center;
 }
 
+/* Projects */
+
+.project{
+    width:100%;
+    background: #243665;
+    padding: 1em;
+    color:white;
+    margin:1em;
+    border-radius:5px;
+}
+
+.project .links a {
+    color:white;
+    font-size:30px;
+}
+
+.project .links a:hover {
+    color:rgb(214, 214, 214);
+}
+
+.project .galery {
+
+}
+
+/* Skills */
+
+#skills h3 span{
+    font-size:15px;
+}
+
+#skills h5{
+    margin-left:1em;
+}
+
+.flag{
+    width:50px;
+    margin:1em;
+}
+
 /* Contact */
 
 .contact-div {
@@ -205,6 +253,10 @@ body {
 
 .contact-div div {
     margin: .4em;
+}
+
+#contact .address{
+    font-size:25px;
 }
 
 /* Footer */
