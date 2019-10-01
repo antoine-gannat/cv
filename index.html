@@ -191,6 +191,25 @@
             <!-- Projects-->
             <section id="projects" class="section section-impair">
                 <h1 class="section-title">Projects</h1>
+                <!-- Creates the bootstrap modal where the image will appear -->
+                <div class="modal fade" id="imagemodal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+                    aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span
+                                        class="sr-only">Close</span></button>
+                                <h4 class="modal-title" id="myModalLabel"></h4>
+                            </div>
+                            <div class="modal-body">
+                                <img src="" id="imagepreview">
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
                 <div class="project row">
                     <div class="col-lg-6">
                         <h3>Space citizen</h3>
@@ -201,13 +220,24 @@
                         </div>
                     </div>
                     <div class="galery col-lg-6">
-                        <table class="table">
-
+                        <table class="table border-less-table">
+                            <tr>
+                                <td><button class="galery-picture-btn"><img src="images/projects/space-citizen/image1.jpg" /></button></td>
+                                <td><button class="galery-picture-btn"><img src="images/projects/space-citizen/image2.jpg" /></button></td>
+                            </tr>
+                            <tr>
+                                <td><button class="galery-picture-btn"><img src="images/projects/space-citizen/image3.jpg" /></button></td>
+                                <td><button class="galery-picture-btn"><img src="images/projects/space-citizen/image4.jpg" /></button></td>
+                            </tr>
                         </table>
                     </div>
                 </div>
                 <div class="project">
                     <h3>Showcas3D</h3>
+                    <p></p>
+                </div>
+                <div class="project">
+                    <h3>HackerRank</h3>
                     <p></p>
                 </div>
             </section>
@@ -306,6 +336,30 @@
         crossorigin="anonymous"></script>
     <!-- Bootstrap script -->
     <script src="js/bootstrap.min.js"></script>
+    <script>
+        // Get every galery button
+        let buttons = document.getElementsByClassName("galery-picture-btn");
+        // For each button
+        for (let i = 0; i < buttons.length; i++) {
+            // add event listener on click
+            buttons[i].addEventListener('click', popModal);
+        }
+        // Display the picture in a modal in bigger
+        function popModal(e) {
+            // If the event path is empty
+            if (e.path.length === 0)
+                return;
+            let imgPath = e.path[0].src;
+            // get the path of the modal's image
+            let imagePreview = document.getElementById('imagepreview');
+            // Get the modal
+            let imagemodal = document.getElementById('imagemodal');
+            // Set the image
+            imagePreview.src = imgPath;
+            // Show the modal
+            $('#imagemodal').modal('show')
+        }
+    </script>
 </body>
 
 </html>

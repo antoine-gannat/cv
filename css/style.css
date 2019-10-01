@@ -224,8 +224,27 @@ body {
     color:rgb(214, 214, 214);
 }
 
-.project .galery {
+.project .galery table img {
+    width:100%;
+}
 
+/* Display the button as a link */
+.galery-picture-btn{
+    background: none!important;
+    border: none;
+    padding: 0!important;
+    /*optional*/
+    font-family: arial, sans-serif;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.modal-body img{
+    width:100%;
+}
+
+.modal-dialog{
+    max-width:800px;
 }
 
 /* Skills */
