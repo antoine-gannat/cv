@@ -398,26 +398,6 @@
             // Save the images in the selected galery
             originGalery = e.path[4].getElementsByTagName('img');
         }
-        // get a folder path from a full path
-        function parsePath(fullpath) {
-            // search for the last slash
-            let lastSlash = fullpath.lastIndexOf('/');
-            // if it was not found, leave
-            if (lastSlash < 0)
-                return null;
-            return ({
-                folder: fullpath.substr(0, lastSlash + 1), // +1 to include the '/'
-                fileName: fullpath.substr(lastSlash + 1) // +1 to remove the '/'
-            });
-        }
-
-        // parse the image number from a string like : image1.jpg
-        function getImageNumber(fileName) {
-            const dotIndex = fileName.lastIndexOf('.');
-            if (dotIndex < 0)
-                return null;
-            return (Number(fileName.substr(dotIndex - 1, 1)));
-        }
 
         function nextPicture() {
             if (!originGalery || !$("#imagepreview"))
