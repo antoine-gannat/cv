@@ -24,17 +24,48 @@ body {
 
 /* Navbar styles */
 
-.left-nav {
-    position: fixed;
-    z-index: 1;
-    /* Stay on top */
-    top: 0;
-    /* Stay at the top */
-    left: 0;
-    background-color: #243665;
-    padding: 0;
-    height: 100%;
-    padding-top: 70px;
+/* For smaller screens */
+
+@media (min-width:320px) {
+    .left-nav-link {
+        font-size: 15px;
+        height: 100%;
+    }
+    .left-nav {
+        position: fixed;
+        display: flex;
+        z-index: 1;
+        /* Stay on top */
+        top: 0;
+        /* Stay at the top */
+        left: 0;
+        background-color: #243665;
+        padding: 0;
+        height: 70px;
+        width: 100%;
+    }
+}
+
+/* For larger screens */
+
+@media (min-width:768px) {
+    .left-nav-link {
+        font-size: 30px;
+        height: auto;
+    }
+    .left-nav {
+        display: block;
+        position: fixed;
+        z-index: 1;
+        /* Stay on top */
+        top: 0;
+        /* Stay at the top */
+        left: 0;
+        background-color: #243665;
+        padding: 0;
+        height: 100%;
+        padding-top: 70px;
+    }
 }
 
 .left-nav-link {
@@ -47,7 +78,6 @@ body {
     background-color: inherit;
     border: none;
     width: inherit;
-    font-size: 35px;
 }
 
 .left-nav-link:hover {
