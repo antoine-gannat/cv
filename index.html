@@ -13,6 +13,8 @@
     </script>
 
     <title>CV of Antoine GANNAT</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
     <meta charset="utf-8" />
     <!-- Favicon -->
     <link rel="icon" type="image/jpg" href="images/me.jpg" />
@@ -212,6 +214,10 @@
                             <div class="modal-body">
                                 <img src="" id="imagepreview">
                             </div>
+                            <div class="modal-menu text-center">
+                                <button class="btn btn-primary" onclick="previousPicture()" title="Previous picture"><i class="fas fa-chevron-left"></i></button>
+                                <button class="btn btn-primary" onclick="nextPicture()" title="Next picture"><i class="fas fa-chevron-right"></i></button>
+                            </div>
                             <div class="modal-footer">
                                 <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
                             </div>
@@ -239,13 +245,43 @@
                         </table>
                     </div>
                 </div>
-                <div class="project">
-                    <h3>Showcas3D</h3>
-                    <p></p>
+                <div class="project row">
+                    <div class="col-lg-6">
+                        <h3>Showcas3D</h3>
+                        <p>A website linking 3d designers and recruiters.</p>
+                        <p>Showcas3D offer a place for 3D artists to display their skills and gives them a chance to find a job !</p>
+                        <div class="links">
+                            <a href="https://showcas3d.tk" target="_blank" title="Discover this project online !"><i class="fas fa-link"></i></a>
+                        </div>
+                    </div>
+                    <div class="galery col-lg-6">
+                        <table class="table border-less-table">
+                            <tr>
+                                <td><button class="galery-picture-btn"><img src="images/projects/showcas3d/image1.jpg" /></button></td>
+                                <td><button class="galery-picture-btn"><img src="images/projects/showcas3d/image2.jpg" /></button></td>
+                            </tr>
+                            <tr>
+                                <td><button class="galery-picture-btn"><img src="images/projects/showcas3d/image3.jpg" /></button></td>
+                                <td><button class="galery-picture-btn"><img src="images/projects/showcas3d/image4.jpg" /></button></td>
+                            </tr>
+                        </table>
+                    </div>
                 </div>
-                <div class="project">
-                    <h3>HackerRank</h3>
-                    <p></p>
+                <div class="project row">
+                    <div class="col-lg-6">
+                        <h3>HackerRank</h3>
+                        <p>Competitive programming in C++, C, Java, SQL and Javascript</p>
+                        <div class="links">
+                            <a href="https://www.hackerrank.com/antoine_gannat" target="_blank" title="Discover this project online !"><i class="fas fa-link"></i></a>
+                        </div>
+                    </div>
+                    <div class="galery col-lg-6">
+                        <table class="table border-less-table">
+                            <tr>
+                                <td><button class="galery-picture-btn"><img src="images/projects/hackerrank/image1.jpg" /></button></td>
+                            </tr>
+                        </table>
+                    </div>
                 </div>
             </section>
             <!-- Skills -->
@@ -344,6 +380,7 @@
     <script>
         // Get every galery button
         let buttons = document.getElementsByClassName("galery-picture-btn");
+        let originGalery = null;
         // For each button
         for (let i = 0; i < buttons.length; i++) {
             // add event listener on click
@@ -354,15 +391,83 @@
             // If the event path is empty
             if (e.path.length === 0)
                 return;
-            let imgPath = e.path[0].src;
-            // get the path of the modal's image
-            let imagePreview = document.getElementById('imagepreview');
-            // Get the modal
-            let imagemodal = document.getElementById('imagemodal');
             // Set the image
-            imagePreview.src = imgPath;
+            $("#imagepreview").attr("src", e.path[0].src);
             // Show the modal
             $('#imagemodal').modal('show')
+            // Save the images in the selected galery
+            originGalery = e.path[4].getElementsByTagName('img');
+        }
+        // get a folder path from a full path
+        function parsePath(fullpath) {
+            // search for the last slash
+            let lastSlash = fullpath.lastIndexOf('/');
+            // if it was not found, leave
+            if (lastSlash < 0)
+                return null;
+            return ({
+                folder: fullpath.substr(0, lastSlash + 1), // +1 to include the '/'
+                fileName: fullpath.substr(lastSlash + 1) // +1 to remove the '/'
+            });
+        }
+
+        // parse the image number from a string like : image1.jpg
+        function getImageNumber(fileName) {
+            const dotIndex = fileName.lastIndexOf('.');
+            if (dotIndex < 0)
+                return null;
+            return (Number(fileName.substr(dotIndex - 1, 1)));
+        }
+
+        function nextPicture() {
+            if (!originGalery || !$("#imagepreview"))
+                return;
+
+            // for each image in this galery
+            for (let i = 0; i < originGalery.length; i++) {
+                // if this image is the one that is displayed in the modal
+                if (originGalery[i].src === $("#imagepreview").attr("src")) {
+                    // Display the next one
+                    let newImg;
+                    if (i + 1 >= originGalery.length) {
+                        // if it's the last image of the galery, display the first one
+                        newImg = originGalery[0];
+                    }
+                    else {
+                        // display the next one
+                        newImg = originGalery[i + 1];
+                    }
+                    // update the image
+                    $("#imagepreview").attr("src", newImg.src);
+                    return;
+                }
+            }
+        }
+
+        function previousPicture() {
+            if (!originGalery || !$("#imagepreview"))
+                return;
+
+            // for each image in this galery
+            for (let i = 0; i < originGalery.length; i++) {
+                // if this image is the one that is displayed in the modal
+                if (originGalery[i].src === $("#imagepreview").attr("src")) {
+                    // Display the next one
+                    let newImg;
+                    if (i - 1 < 0) {
+                        // if it's the first image of the galery, display the last one
+                        newImg = originGalery[originGalery.length - 1];
+                    }
+                    else {
+                        // display the previous one
+                        newImg = originGalery[i - 1];
+                    }
+                    // update the image
+                    $("#imagepreview").attr("src", newImg.src);
+                    return;
+                }
+
+            }
         }
     </script>
 </body>
