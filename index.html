@@ -2,7 +2,20 @@
 <html>
 
 <head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-72848934-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-72848934-1');
+    </script>
+
     <title>CV of Antoine GANNAT</title>
+
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no"> -->
+    <meta charset="utf-8" />
     <!-- Favicon -->
     <link rel="icon" type="image/jpg" href="images/me.jpg" />
     <!-- Include font awesome -->
@@ -71,12 +84,11 @@
                                 <div class="bubble row">
                                     <div class="bubble-arrow"></div>
                                     <div class="col-lg-3 col-md-12 col-sm-12 logo-container">
-                                        <a href="https://www.linkedin.com/in/antoine-gannat/" target="_blank"><img
-                                                class="logo" src="images/companies/antoine-gannat.png" /></a>
+                                        <a href="https://www.linkedin.com/in/antoine-gannat/" target="_blank"><img class="logo" src="images/companies/antoine-gannat.png" /></a>
                                     </div>
                                     <div class="col-lg-9 col-md-12 col-sm-12">
                                         <p class="name">Freelance — Self employed</p>
-                                        <p class="title">Development of all sort of software solutions for companies
+                                        <p class="title">Development of all sorts of software solutions for companies
                                             alongside my studies.
                                         </p>
                                         <hr />
@@ -138,7 +150,7 @@
                                         <hr />
                                         <p class="subjects">C++ / NodeJS / OpenCV / Big Data / C Sockets / Windows API
                                             / Linux</p>
-                                        <p class="date">Octobre 2017 - Février 2018</p>
+                                        <p class="date">February 2016 - August 2019 - (1 year 8 months in multiple internships)</p>
                                     </div>
                                 </div>
                             </li>
@@ -192,17 +204,19 @@
             <section id="projects" class="section section-impair">
                 <h1 class="section-title">Projects</h1>
                 <!-- Creates the bootstrap modal where the image will appear -->
-                <div class="modal fade" id="imagemodal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
-                    aria-hidden="true">
+                <div class="modal fade" id="imagemodal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
                     <div class="modal-dialog">
                         <div class="modal-content">
                             <div class="modal-header">
-                                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span
-                                        class="sr-only">Close</span></button>
+                                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
                                 <h4 class="modal-title" id="myModalLabel"></h4>
                             </div>
                             <div class="modal-body">
                                 <img src="" id="imagepreview">
+                            </div>
+                            <div class="modal-menu text-center">
+                                <button class="btn btn-primary" onclick="previousPicture()" title="Previous picture"><i class="fas fa-chevron-left"></i></button>
+                                <button class="btn btn-primary" onclick="nextPicture()" title="Next picture"><i class="fas fa-chevron-right"></i></button>
                             </div>
                             <div class="modal-footer">
                                 <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
@@ -215,8 +229,7 @@
                         <h3>Space citizen</h3>
                         <p>An online space shooter game. Similar to <a href="https://www.darkorbit.com" target="_blank">Dark-Orbit</a></p>
                         <div class="links">
-                            <a href="https://github.com/Space-Citizen/space-citizen" target="_blank" title="Dicover this project on Github !"><i
-                                    class="fab fa-github-square"></i></a>
+                            <a href="https://github.com/Space-Citizen/space-citizen" target="_blank" title="Dicover this project on Github !"><i class="fab fa-github-square"></i></a>
                         </div>
                     </div>
                     <div class="galery col-lg-6">
@@ -232,13 +245,43 @@
                         </table>
                     </div>
                 </div>
-                <div class="project">
-                    <h3>Showcas3D</h3>
-                    <p></p>
+                <div class="project row">
+                    <div class="col-lg-6">
+                        <h3>Showcas3D</h3>
+                        <p>A website linking 3d designers and recruiters.</p>
+                        <p>Showcas3D offer a place for 3D artists to display their skills and gives them a chance to find a job !</p>
+                        <div class="links">
+                            <a href="https://showcas3d.tk" target="_blank" title="Discover this project online !"><i class="fas fa-link"></i></a>
+                        </div>
+                    </div>
+                    <div class="galery col-lg-6">
+                        <table class="table border-less-table">
+                            <tr>
+                                <td><button class="galery-picture-btn"><img src="images/projects/showcas3d/image1.jpg" /></button></td>
+                                <td><button class="galery-picture-btn"><img src="images/projects/showcas3d/image2.jpg" /></button></td>
+                            </tr>
+                            <tr>
+                                <td><button class="galery-picture-btn"><img src="images/projects/showcas3d/image3.jpg" /></button></td>
+                                <td><button class="galery-picture-btn"><img src="images/projects/showcas3d/image4.jpg" /></button></td>
+                            </tr>
+                        </table>
+                    </div>
                 </div>
-                <div class="project">
-                    <h3>HackerRank</h3>
-                    <p></p>
+                <div class="project row">
+                    <div class="col-lg-6">
+                        <h3>HackerRank</h3>
+                        <p>Competitive programming in C++, C, Java, SQL and Javascript</p>
+                        <div class="links">
+                            <a href="https://www.hackerrank.com/antoine_gannat" target="_blank" title="Discover this project online !"><i class="fas fa-link"></i></a>
+                        </div>
+                    </div>
+                    <div class="galery col-lg-6">
+                        <table class="table border-less-table">
+                            <tr>
+                                <td><button class="galery-picture-btn"><img src="images/projects/hackerrank/image1.jpg" /></button></td>
+                            </tr>
+                        </table>
+                    </div>
                 </div>
             </section>
             <!-- Skills -->
@@ -299,8 +342,8 @@
                         <table class="table text-center border-less-table" cellspacing="0" cellpadding="0">
                             <tbody>
                                 <tr>
-                                    <td><img class="flag" src="images/french.jpg" alt="French flag" title="French" />French</td>
-                                    <td><img class="flag" src="images/english.jpg" alt="England and USA flag" title="English" />English</td>
+                                    <td>French</td>
+                                    <td>English</td>
                                 </tr>
                             </tbody>
                         </table>
@@ -330,15 +373,14 @@
         </main>
     </div>
     <!-- Bootstrap dependencies -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-        crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
-        crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <!-- Bootstrap script -->
     <script src="js/bootstrap.min.js"></script>
     <script>
         // Get every galery button
         let buttons = document.getElementsByClassName("galery-picture-btn");
+        let originGalery = null;
         // For each button
         for (let i = 0; i < buttons.length; i++) {
             // add event listener on click
@@ -349,15 +391,63 @@
             // If the event path is empty
             if (e.path.length === 0)
                 return;
-            let imgPath = e.path[0].src;
-            // get the path of the modal's image
-            let imagePreview = document.getElementById('imagepreview');
-            // Get the modal
-            let imagemodal = document.getElementById('imagemodal');
             // Set the image
-            imagePreview.src = imgPath;
+            $("#imagepreview").attr("src", e.path[0].src);
             // Show the modal
             $('#imagemodal').modal('show')
+            // Save the images in the selected galery
+            originGalery = e.path[4].getElementsByTagName('img');
+        }
+
+        function nextPicture() {
+            if (!originGalery || !$("#imagepreview"))
+                return;
+
+            // for each image in this galery
+            for (let i = 0; i < originGalery.length; i++) {
+                // if this image is the one that is displayed in the modal
+                if (originGalery[i].src === $("#imagepreview").attr("src")) {
+                    // Display the next one
+                    let newImg;
+                    if (i + 1 >= originGalery.length) {
+                        // if it's the last image of the galery, display the first one
+                        newImg = originGalery[0];
+                    }
+                    else {
+                        // display the next one
+                        newImg = originGalery[i + 1];
+                    }
+                    // update the image
+                    $("#imagepreview").attr("src", newImg.src);
+                    return;
+                }
+            }
+        }
+
+        function previousPicture() {
+            if (!originGalery || !$("#imagepreview"))
+                return;
+
+            // for each image in this galery
+            for (let i = 0; i < originGalery.length; i++) {
+                // if this image is the one that is displayed in the modal
+                if (originGalery[i].src === $("#imagepreview").attr("src")) {
+                    // Display the next one
+                    let newImg;
+                    if (i - 1 < 0) {
+                        // if it's the first image of the galery, display the last one
+                        newImg = originGalery[originGalery.length - 1];
+                    }
+                    else {
+                        // display the previous one
+                        newImg = originGalery[i - 1];
+                    }
+                    // update the image
+                    $("#imagepreview").attr("src", newImg.src);
+                    return;
+                }
+
+            }
         }
     </script>
 </body>

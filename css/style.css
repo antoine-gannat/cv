@@ -13,27 +13,59 @@ body {
 }
 
 /* Hide the border from the table */
-.border-less-table{
-    border-collapse:collapse;
+
+.border-less-table {
+    border-collapse: collapse;
 }
 
-.border-less-table td{
-    border:none;
+.border-less-table td {
+    border: none;
 }
 
 /* Navbar styles */
 
-.left-nav {
-    position: fixed;
-    z-index: 1;
-    /* Stay on top */
-    top: 0;
-    /* Stay at the top */
-    left: 0;
-    background-color: #243665;
-    padding: 0;
-    height: 100%;
-    padding-top: 70px;
+/* For smaller screens */
+
+@media (min-width:320px) {
+    .left-nav-link {
+        font-size: 15px;
+        height: 100%;
+    }
+    .left-nav {
+        position: fixed;
+        display: flex;
+        z-index: 1;
+        /* Stay on top */
+        top: 0;
+        /* Stay at the top */
+        left: 0;
+        background-color: #243665;
+        padding: 0;
+        height: 70px;
+        width: 100%;
+    }
+}
+
+/* For larger screens */
+
+@media (min-width:768px) {
+    .left-nav-link {
+        font-size: 30px;
+        height: auto;
+    }
+    .left-nav {
+        display: block;
+        position: fixed;
+        z-index: 1;
+        /* Stay on top */
+        top: 0;
+        /* Stay at the top */
+        left: 0;
+        background-color: #243665;
+        padding: 0;
+        height: 100%;
+        padding-top: 70px;
+    }
 }
 
 .left-nav-link {
@@ -46,7 +78,6 @@ body {
     background-color: inherit;
     border: none;
     width: inherit;
-    font-size: 35px;
 }
 
 .left-nav-link:hover {
@@ -83,7 +114,7 @@ body {
 
 .section {
     color: white;
-    min-height: 50vh;
+    min-height: 10vh;
     width: 100%;
     padding: 3em;
 }
@@ -141,7 +172,8 @@ body {
 }
 
 .profile-picture {
-    border-radius: 130px;
+    max-width: 300px;
+    border-radius: 150px;
     border-color: white;
     border-width: 4px;
     border-style: solid;
@@ -175,21 +207,23 @@ body {
 .university .description {
     font-size: 19px;
 }
+
 @media (max-width:992px) {
-    .university h2{
+    .university h2 {
         margin-top: 1em;
     }
     .university .logo img {
         max-width: 300px;
-        max-height:200px;
+        max-height: 200px;
     }
 }
-@media (min-width:993px) {
 
+@media (min-width:993px) {
     .university .logo img {
         max-width: 100%;
-        max-height:200px;
-    }}
+        max-height: 200px;
+    }
+}
 
 .university .title {
     margin-bottom: 1em;
@@ -206,30 +240,31 @@ body {
 
 /* Projects */
 
-.project{
-    width:100%;
+.project {
+    width: 100%;
     background: #243665;
     padding: 1em;
-    color:white;
-    margin:1em;
-    border-radius:5px;
+    color: white;
+    margin: 1em;
+    border-radius: 5px;
 }
 
 .project .links a {
-    color:white;
-    font-size:30px;
+    color: white;
+    font-size: 30px;
 }
 
 .project .links a:hover {
-    color:rgb(214, 214, 214);
+    color: rgb(214, 214, 214);
 }
 
 .project .galery table img {
-    width:100%;
+    width: 100%;
 }
 
 /* Display the button as a link */
-.galery-picture-btn{
+
+.galery-picture-btn {
     background: none!important;
     border: none;
     padding: 0!important;
@@ -239,27 +274,27 @@ body {
     cursor: pointer;
 }
 
-.modal-body img{
-    width:100%;
+.modal-body img {
+    width: 100%;
 }
 
-.modal-dialog{
-    max-width:800px;
+.modal-dialog {
+    max-width: 800px;
 }
 
 /* Skills */
 
-#skills h3 span{
-    font-size:15px;
+#skills h3 span {
+    font-size: 15px;
 }
 
-#skills h5{
-    margin-left:1em;
+#skills h5 {
+    margin-left: 1em;
 }
 
-.flag{
-    width:50px;
-    margin:1em;
+.flag {
+    width: 50px;
+    margin: 1em;
 }
 
 /* Contact */
@@ -274,8 +309,8 @@ body {
     margin: .4em;
 }
 
-#contact .address{
-    font-size:25px;
+#contact .address {
+    font-size: 25px;
 }
 
 /* Footer */
