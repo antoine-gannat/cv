@@ -18,6 +18,11 @@ body {
     width:100%;
 }
 
+.row{
+    margin-left:0px;
+    margin-right:0px;
+}
+
 /* Hide the border from the table */
 
 .border-less-table {
@@ -73,6 +78,12 @@ body {
         margin-top:10px;
         margin-bottom:10px;
     }
+    .university{
+        margin-left:0px;
+        margin-right:0px;
+        margin-top:10px;
+        margin-bottom:10px;
+    }
 }
 
 /* For larger screens */
@@ -106,6 +117,9 @@ body {
     }
     .project{
         margin: 10px;
+    }
+    .university{
+        margin:10px;
     }
 }
 
@@ -209,7 +223,7 @@ body {
 }
 
 #aboutme {
-    margin-top: -230px;
+    margin-top: -20vh;
     background-color: rgba(0, 0, 0, 0);
 }
 
@@ -243,7 +257,6 @@ body {
 /* Studies */
 
 .university {
-    margin: 10px;
     background: #B73239;
     padding: 1em;
     border-radius: 6px;
