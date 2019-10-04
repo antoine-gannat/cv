@@ -42,6 +42,12 @@ body {
 }
 
 @media (min-width:320px) {
+    .header-title{
+        font-size: 30px;
+    }
+    .header-subtitle{
+        font-size:20px;
+    }
     .left-nav-link i{
         font-size:30px;
     }
@@ -88,7 +94,13 @@ body {
 
 /* For larger screens */
 
-@media (min-width:768px) {    
+@media (min-width:768px) {
+    .header-title{
+        font-size: 50px;
+    }
+    .header-subtitle{
+        font-size:35px;
+    }
     .left-nav-link i{
         font-size:30px;
     }
@@ -215,7 +227,7 @@ body {
     /* The image used */
     background-image: url('../images/san-diego-beach.jpg');
     /* Full height */
-    height: 450px;
+    height: 50vh;
     /* Create the parallax scrolling effect */
     background-attachment: fixed;
     /* background-position: center; */
@@ -223,20 +235,15 @@ body {
 }
 
 #aboutme {
-    margin-top: -30vh;
+    margin-top: -40vh;
     background-color: rgba(0, 0, 0, 0);
 }
 
 .header-title {
     color: white;
-    font-size: 50px;
     text-align: center;
     width: 100%;
     text-shadow: 1px 0 0 black, -1px 0 0 black, 0 1px 0 black, 0 -1px 0 black, 1px 1px black, -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black;
-}
-
-.header-subtitle {
-    font-size: 35px;
 }
 
 .profile-picture {
@@ -323,6 +330,10 @@ body {
 
 .project .links a:hover {
     color: rgb(214, 214, 214);
+}
+
+.modal-body{
+    padding: 0px;
 }
 
 .project .galery table img {
