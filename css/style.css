@@ -114,7 +114,7 @@ body {
 
 .section {
     color: white;
-    min-height: 50vh;
+    min-height: 10vh;
     width: 100%;
     padding: 3em;
 }
