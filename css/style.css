@@ -107,6 +107,9 @@ body {
     .left-nav-link{
         height: 13vh;
     }
+    .left-nav-link-text{
+        font-size:15px;
+    }
     .left-nav {
         display: block;
         position: fixed;
@@ -183,7 +186,6 @@ body {
     vertical-align: middle;
     position: absolute;
     font-weight: bold;
-    font-size: auto;
 }
 
 /* Main */
