@@ -16,6 +16,7 @@
     }
     .timeline li{
         margin-top:2em;
+        width: 100%;
     }
     
 }
@@ -64,6 +65,9 @@
     .timeline .odd .bubble {
         float: left;
     }
+    .timeline li{
+        width: 50%;
+    }
 }
 
 .timeline .bubble {
@@ -100,7 +104,6 @@
 .timeline li {
     list-style-type: none;
     float: left;
-    width: 50%;
     position: relative;
 }
 
