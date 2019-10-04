@@ -223,17 +223,16 @@ body {
 }
 
 #aboutme {
-    margin-top: -20vh;
+    margin-top: -30vh;
     background-color: rgba(0, 0, 0, 0);
 }
 
 .header-title {
-    position: absolute;
     color: white;
-    top: 130px;
     font-size: 50px;
     text-align: center;
     width: 100%;
+    text-shadow: 1px 0 0 black, -1px 0 0 black, 0 1px 0 black, 0 -1px 0 black, 1px 1px black, -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black;
 }
 
 .header-subtitle {
