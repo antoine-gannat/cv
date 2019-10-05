@@ -27,9 +27,25 @@
     <link rel="stylesheet" href="css/timeline.css">
     <!-- Google fonts -->
     <link href="https://fonts.googleapis.com/css?family=Roboto+Slab&display=swap" rel="stylesheet">
+    <!-- Display a loading image until the page is loaded -->
+    <script>
+        // Check if the window is loaded
+        window.addEventListener("load", function () {
+            // Get the loading div
+            let loadingDiv = document.getElementById('loading-div');
+            // If it exist, delete it
+            if (loadingDiv)
+                document.body.removeChild(loadingDiv);
+        })
+    </script>
 </head>
 
 <body data-spy="scroll" data-target=".left-nav" data-offset="450">
+    <!-- Loading div -->
+    <div id="loading-div" class="text-center">
+        <h3>Loading ...</h3>
+        <img src="images/loading.svg" />
+    </div>
     <div class="row" id="top">
         <nav class="col-lg-1 col-md-2 col-sm-12 left-nav">
             <a href="#top" class="btn btn-primary nav-link left-nav-link row">
