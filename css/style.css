@@ -246,7 +246,6 @@ body {
     /* Full height */
     height: 50vh;
     /* Create the parallax scrolling effect */
-    background-position: 0px -150px;
     background-attachment: fixed;
     background-size: cover;
     background-repeat: no-repeat;
