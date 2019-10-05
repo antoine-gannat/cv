@@ -86,6 +86,16 @@
             </a>
         </nav>
         <main class="offset-lg-1 offset-md-2 offset-sm-0 col-lg-11 col-md-10 col-sm-12 main">
+            <!-- Galery visualizer -->
+            <div id="galery-visualizer">
+                <!-- Gallery navigation -->
+                <nav class="text-center">
+                    <button class="btn btn-primary galery-nav-btn" onclick="previousPicture()" title="Previous picture"><i class="fas fa-chevron-left"></i> Prev</button>
+                    <button class="btn btn-primary galery-nav-btn" onclick="nextPicture()" title="Next picture">Next <i class="fas fa-chevron-right"></i></button>
+                    <button class="btn btn-secondary close-btn" onclick="hideVisualizer()"><i class="fas fa-times"></i></button>
+                </nav>
+                <img id="imagepreview" src="" />
+            </div>
             <div class="parallax"></div>
             <!-- Sections -->
             <!-- About me -->
@@ -242,29 +252,6 @@
             <!-- Projects-->
             <section id="projects" class="section section-impair">
                 <h1 class="section-title">Projects</h1>
-                <!-- Creates the bootstrap modal where the image will appear -->
-                <div class="modal fade" id="imagemodal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-                    <div class="modal-dialog">
-                        <div class="modal-content">
-                            <div class="modal-header">
-                                <button type="button" class="close" data-dismiss="modal">
-                                    <span aria-hidden="true">&times;</span>
-                                    <span class="sr-only">Close</span></button>
-                                <h4 class="modal-title" id="myModalLabel"></h4>
-                            </div>
-                            <div class="modal-body">
-                                <img src="" id="imagepreview">
-                            </div>
-                            <div class="modal-footer">
-                                <div class="modal-menu text-center">
-                                    <button class="btn btn-primary" onclick="previousPicture()" title="Previous picture"><i class="fas fa-chevron-left"></i></button>
-                                    <button class="btn btn-primary" onclick="nextPicture()" title="Next picture"><i class="fas fa-chevron-right"></i></button>
-                                </div>
-                                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
                 <div class="project row">
                     <div class="col-lg-6">
                         <h3>Space citizen</h3>
@@ -458,23 +445,39 @@
     <script>
         // Get every galery button
         let buttons = document.getElementsByClassName("galery-picture-btn");
+        // Store the galery from which the visualizer has been called
         let originGalery = null;
+
+        // Add an event listener to the 'escape' key to hide the visualizer
+        document.addEventListener('keyup', function (e) {
+            // If the key is 'escape'
+            if (e && e.key === 'Escape') {
+                hideVisualizer();
+            }
+        })
         // For each button
         for (let i = 0; i < buttons.length; i++) {
             // add event listener on click
-            buttons[i].addEventListener('click', popModal);
+            buttons[i].addEventListener('click', popVisualizer);
         }
-        // Display the picture in a modal in bigger
-        function popModal(e) {
+        // Visualize the picture
+        function popVisualizer(e) {
             // If the event path is empty
             if (e.path.length === 0)
                 return;
             // Set the image
             $("#imagepreview").attr("src", e.path[0].src);
-            // Show the modal
-            $('#imagemodal').modal('show')
+            // Show the visualizer
+            $('#galery-visualizer').css('visibility', 'visible').css('opacity', 1);
             // Save the images in the selected galery
-            originGalery = e.path[4].getElementsByTagName('img');
+            if (e.path.length >= 4)
+                originGalery = e.path[4].getElementsByTagName('img');
+        }
+
+        // Hide the visualizer
+        function hideVisualizer() {
+            $('#galery-visualizer').css('visibility', 'hidden').css('opacity', 0);
+
         }
 
         function nextPicture() {

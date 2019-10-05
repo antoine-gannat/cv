@@ -79,6 +79,7 @@ body {
         background-color: #243665;
         padding: 0;
         height: 10vh;
+        min-height: 65px;
         width: 100%;
     }
     .contact-div {
@@ -366,7 +367,47 @@ body {
     width: 100%;
 }
 
-/* Display the button as a link */
+@media (max-width:992px) {
+    #galery-visualizer {
+        padding: 10px;
+    }
+}
+
+@media (min-width:993px) {
+    #galery-visualizer {
+        padding: 10px 10% 10px 10%;
+    }
+}
+
+#galery-visualizer {
+    opacity: 0;
+    visibility: hidden;
+    transition: all 300ms;
+    position: fixed;
+    left: 0;
+    background: rgba(0, 0, 0, 0.5);
+    width: 100%;
+    height: 100%;
+    z-index: 999;
+}
+
+#galery-visualizer nav {
+    background: rgba(36, 54, 101, 0.9);
+    padding: 2px;
+}
+
+.galery-nav-btn {
+    min-width: 100px;
+    padding: 5px 0px 5px 0px;
+}
+
+#galery-visualizer .close-btn {
+    float: right;
+}
+
+#galery-visualizer img {
+    width: 100%;
+}
 
 .galery-picture-btn {
     background: none!important;
