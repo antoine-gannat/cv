@@ -1,6 +1,7 @@
 /* Timeline */
 
 /* For smaller screens */
+
 @media (min-width:320px) {
     .timeline {
         width: 100%;
@@ -11,27 +12,31 @@
     .timeline .bubble-arrow {
         opacity: 0;
     }
-    .timeline ul{
-        display:-ms-flexbox;display:flex;-ms-flex-wrap:wrap;flex-wrap:wrap;
+    .timeline ul {
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
     }
-    .timeline li{
-        margin-top:2em;
-        padding:0;
+    .timeline li {
+        margin-top: 2em;
+        padding: 0;
         width: 100%;
     }
-
-    .bubble{
+    .bubble {
         width: 100%;
     }
 }
+
 /* For larger screens */
+
 @media (min-width:992px) {
     .timeline {
         float: left;
         width: 100%;
         background: url(../images/timelinebg.png) center top repeat-y;
         padding: 50px 0 42px 0px;
-    }    
+    }
     .timeline .point {
         width: 57px;
         height: 57px;
@@ -50,29 +55,26 @@
         top: 20px;
         right: -10px;
     }
-    .timeline ul{
-        display:inherit;
-        display:inherit;
-        -ms-flex-wrap:inherit;
-        flex-wrap:inherit;
-        margin-right:auto;
-        margin-left:auto;
+    .timeline ul {
+        display: inherit;
+        -ms-flex-wrap: inherit;
+        flex-wrap: inherit;
+        margin-right: auto;
+        margin-left: auto;
     }
-
     .timeline .odd {
         margin: 80px 0 0 0;
     }
-    
     .timeline .odd .bubble {
         margin: 0px 0px 0 30px;
     }
     .timeline .odd .bubble {
         float: left;
     }
-    .timeline li{
+    .timeline li {
         width: 50%;
     }
-    .bubble{
+    .bubble {
         margin: 0px 30px 0 0px;
         width: 85%;
     }
@@ -117,7 +119,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    padding:0;
+    padding: 0;
 }
 
 .timeline .logo {
