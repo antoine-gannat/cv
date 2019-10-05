@@ -7,20 +7,20 @@ html {
 }
 
 body {
-    font-family: 'Roboto Slab', serif;
+    font-family: 'Roboto Slab';
     overflow-x: hidden;
     background-color: #F9EAE1;
 }
 
-#top{
-    margin-left:0px;
-    margin-right:0px;
-    width:100%;
+#top {
+    margin-left: 0px;
+    margin-right: 0px;
+    width: 100%;
 }
 
-.row{
-    margin-left:0px;
-    margin-right:0px;
+.row {
+    margin-left: 0px;
+    margin-right: 0px;
 }
 
 /* Hide the border from the table */
@@ -37,25 +37,25 @@ body {
 
 /* For smaller screens */
 
-.left-nav{
+.left-nav {
     animation: 200ms all;
 }
 
 @media (min-width:320px) {
-    .header-title{
+    .header-title {
         font-size: 30px;
     }
-    .header-subtitle{
-        font-size:20px;
+    .header-subtitle {
+        font-size: 20px;
     }
-    .left-nav-link i{
-        font-size:30px;
+    .left-nav-link i {
+        font-size: 30px;
     }
-    .left-nav-link{
+    .left-nav-link {
         height: 100%;
     }
-    .left-nav-link-text{
-        font-size:10px;
+    .left-nav-link-text {
+        font-size: 10px;
     }
     .left-nav {
         position: fixed;
@@ -70,45 +70,46 @@ body {
         height: 10vh;
         width: 100%;
     }
-
-    .contact-div{
+    .contact-div {
         font-size: auto;
     }
-
-    .section{
-        padding:20px 10px 20px 10px;
+    .section {
+        padding: 20px 10px 20px 10px;
     }
-    .project{
-        margin-left:0px;
-        margin-right:0px;
-        margin-top:10px;
-        margin-bottom:10px;
+    .project {
+        margin-left: 0px;
+        margin-right: 0px;
+        margin-top: 10px;
+        margin-bottom: 10px;
     }
-    .university{
-        margin-left:0px;
-        margin-right:0px;
-        margin-top:10px;
-        margin-bottom:10px;
+    .university {
+        margin-left: 0px;
+        margin-right: 0px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    .skills-table {
+        font-size: 17px;
     }
 }
 
 /* For larger screens */
 
 @media (min-width:768px) {
-    .header-title{
+    .header-title {
         font-size: 50px;
     }
-    .header-subtitle{
-        font-size:35px;
+    .header-subtitle {
+        font-size: 35px;
     }
-    .left-nav-link i{
-        font-size:30px;
+    .left-nav-link i {
+        font-size: 30px;
     }
-    .left-nav-link{
+    .left-nav-link {
         height: 13vh;
     }
-    .left-nav-link-text{
-        font-size:15px;
+    .left-nav-link-text {
+        font-size: 15px;
     }
     .left-nav {
         display: block;
@@ -120,21 +121,24 @@ body {
         left: 0;
         background-color: #243665;
         padding: 0;
-        padding-top:3vh;
+        padding-top: 3vh;
         height: 100%;
-        width:100%;
+        width: 100%;
     }
-    .contact-div{
+    .contact-div {
         font-size: 25px;
     }
-    .section{
-        padding:3em;
+    .section {
+        padding: 3em;
     }
-    .project{
+    .project {
         margin: 10px;
     }
-    .university{
-        margin:10px;
+    .university {
+        margin: 10px;
+    }
+    .skills-table {
+        font-size: 25px;
     }
 }
 
@@ -157,18 +161,19 @@ body {
     background: #2d4480;
 }
 
-.left-nav .row{
-    margin-left:0px;
-    margin-right:0px;
+.left-nav .row {
+    margin-left: 0px;
+    margin-right: 0px;
 }
 
-.left-nav .row{
-    margin-left:0px;
-    margin-right:0px;
+.left-nav .row {
+    margin-left: 0px;
+    margin-right: 0px;
 }
-.left-nav .row .col-12{
-    padding-right:0;
-    padding-left:0;
+
+.left-nav .row .col-12 {
+    padding-right: 0;
+    padding-left: 0;
 }
 
 .active .left-nav-link-text {
@@ -219,8 +224,7 @@ body {
 
 .section-impair {
     color: black;
-    background-color: rgb(235, 205, 182);
-    /* background-color: rgb(231, 203, 162); */
+    background-color: #ebcdb6;
 }
 
 /* About me */
@@ -265,12 +269,15 @@ body {
 /* Studies */
 
 .university {
-    background: #B73239;
-    padding: 1em;
+    /* background: #2274A5; */
+    background: #E8D6CB;
     border-radius: 6px;
-    color: white;
-    width:100%;
-    box-shadow: 1px 1px 1px black;
+    color: black;
+    width: 100%;
+}
+
+.university .content {
+    padding: 1em;
 }
 
 .university p {
@@ -283,6 +290,10 @@ body {
 
 .university .description {
     font-size: 19px;
+}
+
+.university .logo {
+    background: #243665;
 }
 
 @media (max-width:992px) {
@@ -334,7 +345,7 @@ body {
     color: rgb(214, 214, 214);
 }
 
-.modal-body{
+.modal-body {
     padding: 0px;
 }
 
@@ -378,11 +389,10 @@ body {
 }
 
 .skills-table {
-    background-color: #B73239;
+    background-color: #E8D6CB;
     padding: 1em;
-    color: white;
+    color: black;
     border-radius: 10px;
-    font-size: auto;
 }
 
 /* Contact */
