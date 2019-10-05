@@ -293,6 +293,8 @@ body {
 }
 
 .university .logo {
+    padding-top: 5px;
+    padding-bottom: 5px;
     background: #243665;
 }
 
@@ -433,7 +435,7 @@ body {
 /* Footer */
 
 .footer {
-    height: 5vh;
+    height: 50px;
     padding: .4em 2em;
     background-color: #243665;
     font-size: 20px;
