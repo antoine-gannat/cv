@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
     <!-- Global site tag (gtag.js) - Google Analytics -->
@@ -27,25 +27,9 @@
     <link rel="stylesheet" href="css/timeline.css">
     <!-- Google fonts -->
     <link href="https://fonts.googleapis.com/css?family=Roboto+Slab&display=swap" rel="stylesheet">
-    <!-- Display a loading image until the page is loaded -->
-    <script>
-        // Check if the window is loaded
-        window.addEventListener("load", function () {
-            // Get the loading div
-            let loadingDiv = document.getElementById('loading-div');
-            // If it exist, delete it
-            if (loadingDiv)
-                document.body.removeChild(loadingDiv);
-        })
-    </script>
 </head>
 
 <body data-spy="scroll" data-target=".left-nav" data-offset="450">
-    <!-- Loading div -->
-    <div id="loading-div" class="text-center">
-        <h3>Loading ...</h3>
-        <img src="images/loading.svg" />
-    </div>
     <div class="row" id="top">
         <nav class="col-lg-1 col-md-2 col-sm-12 left-nav">
             <a href="#top" class="btn btn-primary nav-link left-nav-link row">
@@ -94,7 +78,7 @@
                     <button class="btn btn-primary galery-nav-btn" onclick="nextPicture()" title="Next picture">Next <i class="fas fa-chevron-right"></i></button>
                     <button class="btn btn-secondary close-btn" onclick="hideVisualizer()"><i class="fas fa-times"></i></button>
                 </nav>
-                <img id="imagepreview" src="" />
+                <img id="imagepreview" src="" alt="preview" />
             </div>
             <div class="parallax"></div>
             <!-- Sections -->
@@ -122,7 +106,7 @@
                                 <div class="bubble row">
                                     <div class="bubble-arrow"></div>
                                     <div class="col-lg-3 col-md-12 col-sm-12 logo-container">
-                                        <a href="https://www.linkedin.com/in/antoine-gannat/" target="_blank"><img class="logo" src="images/companies/antoine-gannat.png" /></a>
+                                        <a href="https://www.linkedin.com/in/antoine-gannat/" target="_blank"><img class="logo" src="images/companies/antoine-gannat.png" alt="antoine gannat freelance" /></a>
                                     </div>
                                     <div class="col-lg-9 col-md-12 col-sm-12">
                                         <p class="name">Freelance — Self employed</p>
@@ -130,7 +114,7 @@
                                             alongside my studies.
                                         </p>
                                         <hr />
-                                        <p class=" subjects">C++ / C# / .Net</p>
+                                        <p class="subjects">C++ / C# / .Net</p>
                                         <p class="date">September 2019 - Today</p>
                                     </div>
                                 </div>
@@ -140,7 +124,7 @@
                                 <div class="bubble row">
                                     <div class="bubble-arrow"></div>
                                     <div class="col-lg-3 col-md-12 col-sm-12 logo-container">
-                                        <a href="https://www.genesys.com" target="_blank"><img class="logo" src="images/companies/genesys.png" /></a>
+                                        <a href="https://www.genesys.com" target="_blank"><img class="logo" src="images/companies/genesys.png" alt="genesys" /></a>
                                     </div>
                                     <div class="col-lg-9 col-md-12 col-sm-12">
                                         <p class="name">Genesys, Guipavas, France — Intern</p>
@@ -162,7 +146,7 @@
                                 <div class="bubble row">
                                     <div class="bubble-arrow"></div>
                                     <div class="col-lg-3 col-md-12 col-sm-12 logo-container">
-                                        <a href="https://www.ecat-id.com/" target="_blank"><img class="logo" src="images/companies/ecatid.png" /></a>
+                                        <a href="https://www.ecat-id.com/" target="_blank"><img class="logo" src="images/companies/ecatid.png" alt="ecat-id" /></a>
                                     </div>
                                     <div class="col-lg-9 col-md-12 col-sm-12">
                                         <p class="name">Ecat-ID, Landerneau, France — Intern R&D</p>
@@ -203,7 +187,7 @@
                 <h1 class="section-title">Studies</h1>
                 <div class="university row">
                     <div class="col-lg-2 col-md-12 col-sm-12 logo">
-                        <img src="images/companies/epitech.png" />
+                        <img src="images/companies/epitech.png" alt="epitech" />
                     </div>
                     <div class="col-lg-10 col-md-12 col-sm-12 content">
                         <h2>EPITECH - Rennes, France - Master</h2>
@@ -227,7 +211,7 @@
                 </div>
                 <div class="university row">
                     <div class="col-lg-2 col-md-12 col-sm-12 logo">
-                        <img src="images/companies/csulb.png" />
+                        <img src="images/companies/csulb.png" alt="csulb" />
                     </div>
                     <div class="col-lg-10 col-md-12 col-sm-12 content">
                         <h2>California State University Long Beach - California, USA - Certificate</h2>
@@ -276,12 +260,12 @@
                     <div class="galery col-lg-6">
                         <table class="table border-less-table">
                             <tr>
-                                <td><button class="galery-picture-btn"><img src="images/projects/space-citizen/image1.jpg" /></button></td>
-                                <td><button class="galery-picture-btn"><img src="images/projects/space-citizen/image2.jpg" /></button></td>
+                                <td><button class="galery-picture-btn"><img src="images/projects/space-citizen/image1.jpg" alt="space-citizen" /></button></td>
+                                <td><button class="galery-picture-btn"><img src="images/projects/space-citizen/image2.jpg" alt="space-citizen" /></button></td>
                             </tr>
                             <tr>
-                                <td><button class="galery-picture-btn"><img src="images/projects/space-citizen/image3.jpg" /></button></td>
-                                <td><button class="galery-picture-btn"><img src="images/projects/space-citizen/image4.jpg" /></button></td>
+                                <td><button class="galery-picture-btn"><img src="images/projects/space-citizen/image3.jpg" alt="space-citizen" /></button></td>
+                                <td><button class="galery-picture-btn"><img src="images/projects/space-citizen/image4.jpg" alt="space-citizen" /></button></td>
                             </tr>
                         </table>
                     </div>
@@ -310,12 +294,12 @@
                     <div class="galery col-lg-6">
                         <table class="table border-less-table">
                             <tr>
-                                <td><button class="galery-picture-btn"><img src="images/projects/showcas3d/image1.jpg" /></button></td>
-                                <td><button class="galery-picture-btn"><img src="images/projects/showcas3d/image2.jpg" /></button></td>
+                                <td><button class="galery-picture-btn"><img src="images/projects/showcas3d/image1.jpg" alt="showcas3d" /></button></td>
+                                <td><button class="galery-picture-btn"><img src="images/projects/showcas3d/image2.jpg" alt="showcas3d" /></button></td>
                             </tr>
                             <tr>
-                                <td><button class="galery-picture-btn"><img src="images/projects/showcas3d/image3.jpg" /></button></td>
-                                <td><button class="galery-picture-btn"><img src="images/projects/showcas3d/image4.jpg" /></button></td>
+                                <td><button class="galery-picture-btn"><img src="images/projects/showcas3d/image3.jpg" alt="showcas3d" /></button></td>
+                                <td><button class="galery-picture-btn"><img src="images/projects/showcas3d/image4.jpg" alt="showcas3d" /></button></td>
                             </tr>
                         </table>
                     </div>
@@ -334,7 +318,7 @@
                     <div class="galery col-lg-6">
                         <table class="table border-less-table">
                             <tr>
-                                <td><button class="galery-picture-btn"><img src="images/projects/hackerrank/image1.jpg" /></button></td>
+                                <td><button class="galery-picture-btn"><img src="images/projects/hackerrank/image1.jpg" alt="hackerrank" /></button></td>
                             </tr>
                         </table>
                     </div>
