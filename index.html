@@ -106,7 +106,7 @@
                                 <div class="bubble row">
                                     <div class="bubble-arrow"></div>
                                     <div class="col-lg-3 col-md-12 col-sm-12 logo-container">
-                                        <a href="https://www.linkedin.com/in/antoine-gannat/" target="_blank"><img class="logo" src="images/companies/antoine-gannat.png" alt="antoine gannat freelance" /></a>
+                                        <a href="https://www.linkedin.com/in/antoine-gannat/" target="_blank" rel="noreferrer noopener"><img class="logo" src="images/companies/antoine-gannat.png" alt="antoine gannat freelance" /></a>
                                     </div>
                                     <div class="col-lg-9 col-md-12 col-sm-12">
                                         <p class="name">Freelance — Self employed</p>
@@ -124,7 +124,7 @@
                                 <div class="bubble row">
                                     <div class="bubble-arrow"></div>
                                     <div class="col-lg-3 col-md-12 col-sm-12 logo-container">
-                                        <a href="https://www.genesys.com" target="_blank"><img class="logo" src="images/companies/genesys.png" alt="genesys" /></a>
+                                        <a href="https://www.genesys.com" target="_blank" rel="noreferrer noopener"><img class="logo" src="images/companies/genesys.png" alt="genesys" /></a>
                                     </div>
                                     <div class="col-lg-9 col-md-12 col-sm-12">
                                         <p class="name">Genesys, Guipavas, France — Intern</p>
@@ -146,7 +146,7 @@
                                 <div class="bubble row">
                                     <div class="bubble-arrow"></div>
                                     <div class="col-lg-3 col-md-12 col-sm-12 logo-container">
-                                        <a href="https://www.ecat-id.com/" target="_blank"><img class="logo" src="images/companies/ecatid.png" alt="ecat-id" /></a>
+                                        <a href="https://www.ecat-id.com/" target="_blank" rel="noreferrer noopener"><img class="logo" src="images/companies/ecatid.png" alt="ecat-id" /></a>
                                     </div>
                                     <div class="col-lg-9 col-md-12 col-sm-12">
                                         <p class="name">Ecat-ID, Landerneau, France — Intern R&D</p>
@@ -238,7 +238,7 @@
                 <div class="project row">
                     <div class="col-lg-6">
                         <h3>Space citizen</h3>
-                        <h5>An online space shooter game. Similar to <a href="https://www.darkorbit.com" target="_blank">Dark-Orbit</a>.</h5>
+                        <h5>An online space shooter game. Similar to <a href="https://www.darkorbit.com" target="_blank" rel="noreferrer noopener">Dark-Orbit</a>.</h5>
                         <br />
                         <p>
                             A fun project made with two other EPITECH students.
@@ -254,7 +254,7 @@
                             The textures are based on the science fiction franchise 'Stargate'.
                         </p>
                         <div class="links">
-                            <a href="https://github.com/Space-Citizen/space-citizen" target="_blank" title="Dicover this project on Github !"><i class="fab fa-github-square"></i></a>
+                            <a href="https://github.com/Space-Citizen/space-citizen" target="_blank" title="Dicover this project on Github !" rel="noreferrer noopener"><i class="fab fa-github-square"></i></a>
                         </div>
                     </div>
                     <div class="galery col-lg-6">
@@ -288,7 +288,7 @@
                         </p>
                         <span><i>Project still in development.</i></span>
                         <div class="links">
-                            <a href="https://showcas3d.tk" target="_blank" title="Discover this project online !"><i class="fas fa-link"></i></a>
+                            <a href="https://showcas3d.tk" target="_blank" title="Discover this project online !" rel="noreferrer noopener"><i class="fas fa-link"></i></a>
                         </div>
                     </div>
                     <div class="galery col-lg-6">
@@ -312,7 +312,7 @@
                         <p>I've trained a lot on HackerRank to prepare for technical interviews.<br />
                             I also used this website to challenge myself to do the best and fastest code possible.</p>
                         <div class="links">
-                            <a href="https://www.hackerrank.com/antoine_gannat" target="_blank" title="Discover this project online !"><i class="fas fa-link"></i></a>
+                            <a href="https://www.hackerrank.com/antoine_gannat" target="_blank" title="Discover this project online !" rel="noreferrer noopener"><i class="fas fa-link"></i></a>
                         </div>
                     </div>
                     <div class="galery col-lg-6">
@@ -323,7 +323,7 @@
                         </table>
                     </div>
                 </div>
-                <h4 class="text-center">Find more of my projects on <a href="https://github.com/antoine-gannat" target="_blank" title="My github account">Github</a> !</h4>
+                <h4 class="text-center">Find more of my projects on <a href="https://github.com/antoine-gannat" target="_blank" title="My github account" rel="noreferrer noopener">Github</a> !</h4>
             </section>
             <!-- Skills -->
             <section id="skills" class="section section-pair">
@@ -420,100 +420,12 @@
             </footer>
         </main>
     </div>
-    <!-- Bootstrap dependencies -->
+    <!-- Bootstrap -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-    <!-- Bootstrap script -->
-    <script src="js/bootstrap.min.js"></script>
-    <script>
-        // Get every galery button
-        let buttons = document.getElementsByClassName("galery-picture-btn");
-        // Store the galery from which the visualizer has been called
-        let originGalery = null;
-
-        // Add an event listener to the 'escape' key to hide the visualizer
-        document.addEventListener('keyup', function (e) {
-            // If the key is 'escape'
-            if (e && e.key === 'Escape') {
-                hideVisualizer();
-            }
-        })
-        // For each button
-        for (let i = 0; i < buttons.length; i++) {
-            // add event listener on click
-            buttons[i].addEventListener('click', popVisualizer);
-        }
-        // Visualize the picture
-        function popVisualizer(e) {
-            // If the event path is empty
-            if (e.path.length === 0)
-                return;
-            // Set the image
-            $("#imagepreview").attr("src", e.path[0].src);
-            // Show the visualizer
-            $('#galery-visualizer').css('visibility', 'visible').css('opacity', 1);
-            // Save the images in the selected galery
-            if (e.path.length >= 4)
-                originGalery = e.path[4].getElementsByTagName('img');
-        }
-
-        // Hide the visualizer
-        function hideVisualizer() {
-            $('#galery-visualizer').css('visibility', 'hidden').css('opacity', 0);
-
-        }
-
-        function nextPicture() {
-            if (!originGalery || !$("#imagepreview"))
-                return;
-
-            // for each image in this galery
-            for (let i = 0; i < originGalery.length; i++) {
-                // if this image is the one that is displayed in the modal
-                if (originGalery[i].src === $("#imagepreview").attr("src")) {
-                    // Display the next one
-                    let newImg;
-                    if (i + 1 >= originGalery.length) {
-                        // if it's the last image of the galery, display the first one
-                        newImg = originGalery[0];
-                    }
-                    else {
-                        // display the next one
-                        newImg = originGalery[i + 1];
-                    }
-                    // update the image
-                    $("#imagepreview").attr("src", newImg.src);
-                    return;
-                }
-            }
-        }
-
-        function previousPicture() {
-            if (!originGalery || !$("#imagepreview"))
-                return;
-
-            // for each image in this galery
-            for (let i = 0; i < originGalery.length; i++) {
-                // if this image is the one that is displayed in the modal
-                if (originGalery[i].src === $("#imagepreview").attr("src")) {
-                    // Display the next one
-                    let newImg;
-                    if (i - 1 < 0) {
-                        // if it's the first image of the galery, display the last one
-                        newImg = originGalery[originGalery.length - 1];
-                    }
-                    else {
-                        // display the previous one
-                        newImg = originGalery[i - 1];
-                    }
-                    // update the image
-                    $("#imagepreview").attr("src", newImg.src);
-                    return;
-                }
-
-            }
-        }
-    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    <!-- Project visualizer -->
+    <script src="js/visualizer.js"></script>
 </body>
 
 </html>
