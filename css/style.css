@@ -4,6 +4,8 @@
 
 html {
     scroll-behavior: smooth;
+    /* Set a default font while the other font load */
+    font-family:Arial;
 }
 
 body {
@@ -11,6 +13,7 @@ body {
     overflow-x: hidden;
     background-color: #F9EAE1;
 }
+
 
 #top {
     margin-left: 0px;
