@@ -4,23 +4,26 @@
 
 html {
     scroll-behavior: smooth;
+    /* Set a default font while the other font load */
+    font-family:Arial;
 }
 
 body {
-    font-family: 'Roboto Slab', serif;
+    font-family: 'Roboto Slab';
     overflow-x: hidden;
     background-color: #F9EAE1;
 }
 
-#top{
-    margin-left:0px;
-    margin-right:0px;
-    width:100%;
+
+#top {
+    margin-left: 0px;
+    margin-right: 0px;
+    width: 100%;
 }
 
-.row{
-    margin-left:0px;
-    margin-right:0px;
+.row {
+    margin-left: 0px;
+    margin-right: 0px;
 }
 
 /* Hide the border from the table */
@@ -37,25 +40,25 @@ body {
 
 /* For smaller screens */
 
-.left-nav{
+.left-nav {
     animation: 200ms all;
 }
 
 @media (min-width:320px) {
-    .header-title{
+    .header-title {
         font-size: 30px;
     }
-    .header-subtitle{
-        font-size:20px;
+    .header-subtitle {
+        font-size: 20px;
     }
-    .left-nav-link i{
-        font-size:30px;
+    .left-nav-link i {
+        font-size: 30px;
     }
-    .left-nav-link{
+    .left-nav-link {
         height: 100%;
     }
-    .left-nav-link-text{
-        font-size:10px;
+    .left-nav-link-text {
+        font-size: 10px;
     }
     .left-nav {
         position: fixed;
@@ -68,47 +71,49 @@ body {
         background-color: #243665;
         padding: 0;
         height: 10vh;
+        min-height: 65px;
         width: 100%;
     }
-
-    .contact-div{
+    .contact-div {
         font-size: auto;
     }
-
-    .section{
-        padding:20px 10px 20px 10px;
+    .section {
+        padding: 20px 10px 20px 10px;
     }
-    .project{
-        margin-left:0px;
-        margin-right:0px;
-        margin-top:10px;
-        margin-bottom:10px;
+    .project {
+        margin-left: 0px;
+        margin-right: 0px;
+        margin-top: 10px;
+        margin-bottom: 10px;
     }
-    .university{
-        margin-left:0px;
-        margin-right:0px;
-        margin-top:10px;
-        margin-bottom:10px;
+    .university {
+        margin-left: 0px;
+        margin-right: 0px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    .skills-list {
+        font-size: 17px;
     }
 }
 
 /* For larger screens */
 
 @media (min-width:768px) {
-    .header-title{
+    .header-title {
         font-size: 50px;
     }
-    .header-subtitle{
-        font-size:35px;
+    .header-subtitle {
+        font-size: 35px;
     }
-    .left-nav-link i{
-        font-size:30px;
+    .left-nav-link i {
+        font-size: 30px;
     }
-    .left-nav-link{
+    .left-nav-link {
         height: 13vh;
     }
-    .left-nav-link-text{
-        font-size:15px;
+    .left-nav-link-text {
+        font-size: 15px;
     }
     .left-nav {
         display: block;
@@ -120,21 +125,24 @@ body {
         left: 0;
         background-color: #243665;
         padding: 0;
-        padding-top:3vh;
+        padding-top: 3vh;
         height: 100%;
-        width:100%;
+        width: 100%;
     }
-    .contact-div{
+    .contact-div {
         font-size: 25px;
     }
-    .section{
-        padding:3em;
+    .section {
+        padding: 3em;
     }
-    .project{
+    .project {
         margin: 10px;
     }
-    .university{
-        margin:10px;
+    .university {
+        margin: 10px;
+    }
+    .skills-list {
+        font-size: 25px;
     }
 }
 
@@ -157,18 +165,19 @@ body {
     background: #2d4480;
 }
 
-.left-nav .row{
-    margin-left:0px;
-    margin-right:0px;
+.left-nav .row {
+    margin-left: 0px;
+    margin-right: 0px;
 }
 
-.left-nav .row{
-    margin-left:0px;
-    margin-right:0px;
+.left-nav .row {
+    margin-left: 0px;
+    margin-right: 0px;
 }
-.left-nav .row .col-12{
-    padding-right:0;
-    padding-left:0;
+
+.left-nav .row .col-12 {
+    padding-right: 0;
+    padding-left: 0;
 }
 
 .active .left-nav-link-text {
@@ -219,8 +228,7 @@ body {
 
 .section-impair {
     color: black;
-    background-color: rgb(235, 205, 182);
-    /* background-color: rgb(231, 203, 162); */
+    background-color: #ebcdb6;
 }
 
 /* About me */
@@ -232,7 +240,7 @@ body {
     height: 50vh;
     /* Create the parallax scrolling effect */
     background-attachment: fixed;
-    /* background-position: center; */
+    background-size: cover;
     background-repeat: no-repeat;
 }
 
@@ -265,12 +273,15 @@ body {
 /* Studies */
 
 .university {
-    background: #B73239;
-    padding: 1em;
+    /* background: #2274A5; */
+    background: #E8D6CB;
     border-radius: 6px;
-    color: white;
-    width:100%;
-    box-shadow: 1px 1px 1px black;
+    color: black;
+    width: 100%;
+}
+
+.university .content {
+    padding: 1em;
 }
 
 .university p {
@@ -283,6 +294,12 @@ body {
 
 .university .description {
     font-size: 19px;
+}
+
+.university .logo {
+    padding-top: 5px;
+    padding-bottom: 5px;
+    background: #243665;
 }
 
 @media (max-width:992px) {
@@ -334,7 +351,7 @@ body {
     color: rgb(214, 214, 214);
 }
 
-.modal-body{
+.modal-body {
     padding: 0px;
 }
 
@@ -342,7 +359,47 @@ body {
     width: 100%;
 }
 
-/* Display the button as a link */
+@media (max-width:992px) {
+    #galery-visualizer {
+        padding: 10px;
+    }
+}
+
+@media (min-width:993px) {
+    #galery-visualizer {
+        padding: 10px 10% 10px 10%;
+    }
+}
+
+#galery-visualizer {
+    opacity: 0;
+    visibility: hidden;
+    transition: all 300ms;
+    position: fixed;
+    left: 0;
+    background: rgba(0, 0, 0, 0.5);
+    width: 100%;
+    height: 100%;
+    z-index: 999;
+}
+
+#galery-visualizer nav {
+    background: rgba(36, 54, 101, 0.9);
+    padding: 2px;
+}
+
+.galery-nav-btn {
+    min-width: 100px;
+    padding: 5px 0px 5px 0px;
+}
+
+#galery-visualizer .close-btn {
+    float: right;
+}
+
+#galery-visualizer img {
+    width: 100%;
+}
 
 .galery-picture-btn {
     background: none!important;
@@ -377,12 +434,32 @@ body {
     margin: 1em;
 }
 
-.skills-table {
-    background-color: #B73239;
-    padding: 1em;
-    color: white;
+.skills-list {
+    background-color: #E8D6CB;
+    color: black;
     border-radius: 10px;
-    font-size: auto;
+    margin-bottom: 1em;
+    margin-top: 1em;
+}
+
+.skill-table {
+    margin-bottom: 0px;
+    padding: 1em;
+}
+
+.skill-table-name {
+    background-color: #243665;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    min-height: 70px;
+}
+
+.skill-table-name span {
+    font-size: 20px;
+    margin-left: 1em;
 }
 
 /* Contact */
@@ -395,14 +472,18 @@ body {
     margin: .4em;
 }
 
+.contact-icon {
+    margin-right: .5em;
+}
+
 /* Footer */
 
 .footer {
-    height: 5vh;
-    padding: .2em 2em;
+    height: 50px;
+    padding: .4em 2em;
     background-color: #243665;
     font-size: 20px;
-    vertical-align: center;
+    text-align: center;
 }
 
 .copyright {

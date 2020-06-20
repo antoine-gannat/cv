@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
     <!-- Global site tag (gtag.js) - Google Analytics -->
@@ -12,10 +12,11 @@
         gtag('config', 'UA-72848934-1');
     </script>
 
-    <title>CV of Antoine GANNAT</title>
+    <title>Antoine GANNAT - Online CV</title>
 
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Online CV of Antoine GANNAT, Fullstack developer, Freelancer and more.">
     <!-- Favicon -->
     <link rel="icon" type="image/jpg" href="images/me.jpg" />
     <!-- Include font awesome -->
@@ -70,6 +71,16 @@
             </a>
         </nav>
         <main class="offset-lg-1 offset-md-2 offset-sm-0 col-lg-11 col-md-10 col-sm-12 main">
+            <!-- Galery visualizer -->
+            <div id="galery-visualizer">
+                <!-- Gallery navigation -->
+                <nav class="text-center">
+                    <button class="btn btn-primary galery-nav-btn" onclick="previousPicture()" title="Previous picture"><i class="fas fa-chevron-left"></i> Prev</button>
+                    <button class="btn btn-primary galery-nav-btn" onclick="nextPicture()" title="Next picture">Next <i class="fas fa-chevron-right"></i></button>
+                    <button class="btn btn-secondary close-btn" onclick="hideVisualizer()"><i class="fas fa-times"></i></button>
+                </nav>
+                <img id="imagepreview" src="" alt="preview" />
+            </div>
             <div class="parallax"></div>
             <!-- Sections -->
             <!-- About me -->
@@ -82,7 +93,7 @@
                     <img src="images/me.jpg" class="profile-picture" alt="me" />
                 </div>
                 <p class="about-me-text">Curious, dynamic and motivated, I’m passionate about new technologies,
-                    aerospatial and electronics. I’m looking for a new opportunity to challenge myself.</p>
+                    aerospace and electronics. I’m looking for a new opportunity to challenge myself.</p>
             </section>
             <!-- Employment-->
             <section id="employment" class="section section-impair">
@@ -96,8 +107,7 @@
                                 <div class="bubble row">
                                     <div class="bubble-arrow"></div>
                                     <div class="col-lg-3 col-md-12 col-sm-12 logo-container">
-                                        <a href="https://www.linkedin.com/in/antoine-gannat/" target="_blank"><img
-                                                class="logo" src="images/companies/antoine-gannat.png" /></a>
+                                        <a href="https://www.linkedin.com/in/antoine-gannat/" target="_blank" rel="noreferrer noopener"><img class="logo" src="images/companies/antoine-gannat.png" alt="antoine gannat freelance" /></a>
                                     </div>
                                     <div class="col-lg-9 col-md-12 col-sm-12">
                                         <p class="name">Freelance — Self employed</p>
@@ -105,7 +115,7 @@
                                             alongside my studies.
                                         </p>
                                         <hr />
-                                        <p class=" subjects">C++ / C# / .Net</p>
+                                        <p class="subjects">C++ / C# / .Net</p>
                                         <p class="date">September 2019 - Today</p>
                                     </div>
                                 </div>
@@ -115,10 +125,10 @@
                                 <div class="bubble row">
                                     <div class="bubble-arrow"></div>
                                     <div class="col-lg-3 col-md-12 col-sm-12 logo-container">
-                                        <a href="https://www.genesys.com" target="_blank"><img class="logo" src="images/companies/genesys.png" /></a>
+                                        <a href="https://www.genesys.com" target="_blank" rel="noreferrer noopener"><img class="logo" src="images/companies/genesys.png" alt="genesys" /></a>
                                     </div>
                                     <div class="col-lg-9 col-md-12 col-sm-12">
-                                        <p class="name">Genesys, Guipava, France — Intern</p>
+                                        <p class="name">Genesys, Guipavas, France — Intern</p>
                                         <p class="title">Development and upgrade of tools and softwares related to
                                             contact
                                             centers.<br /><br />
@@ -137,7 +147,7 @@
                                 <div class="bubble row">
                                     <div class="bubble-arrow"></div>
                                     <div class="col-lg-3 col-md-12 col-sm-12 logo-container">
-                                        <a href="https://www.ecat-id.com/" target="_blank"><img class="logo" src="images/companies/ecatid.png" /></a>
+                                        <a href="https://www.ecat-id.com/" target="_blank" rel="noreferrer noopener"><img class="logo" src="images/companies/ecatid.png" alt="ecat-id" /></a>
                                     </div>
                                     <div class="col-lg-9 col-md-12 col-sm-12">
                                         <p class="name">Ecat-ID, Landerneau, France — Intern R&D</p>
@@ -178,31 +188,40 @@
                 <h1 class="section-title">Studies</h1>
                 <div class="university row">
                     <div class="col-lg-2 col-md-12 col-sm-12 logo">
-                        <img src="images/companies/epitech.png" />
+                        <img src="images/companies/epitech.png" alt="epitech" />
                     </div>
-                    <div class="col-lg-10 col-md-12 col-sm-12">
+                    <div class="col-lg-10 col-md-12 col-sm-12 content">
                         <h2>EPITECH - Rennes, France - Master</h2>
                         <p class="date">September 2015 - July 2020</p>
                         <p class="title">Master in computer science.</p>
                         <p class="description">
                             French university known for its intensive programming classes.<br />
                             Development of more than 50 projects in group and by myself in a dozen of programing
-                            languages.
+                            languages :<br /><br />
+                            It was very important to make a robust code, with every user inputs verified.<br />
+                            The projects were tested automatically with a lot of performance and memory-leak tests.<br /><br />
+                            Most of the projects were done in those languages : <br />
+                            <ul>
+                                <li>C</li>
+                                <li>C++</li>
+                                <li>C# / .NET</li>
+                                <li>Java</li>
+                            </ul>
                         </p>
                     </div>
                 </div>
                 <div class="university row">
                     <div class="col-lg-2 col-md-12 col-sm-12 logo">
-                        <img src="images/companies/csulb.png" />
+                        <img src="images/companies/csulb.png" alt="csulb" />
                     </div>
-                    <div class="col-lg-10 col-md-12 col-sm-12">
+                    <div class="col-lg-10 col-md-12 col-sm-12 content">
                         <h2>California State University Long Beach - California, USA - Certificate</h2>
                         <p class="date">October 2018 - May 2019</p>
                         <p class="title">English certificate</p>
                         <p class="description">
                             Year abroad in California as part of my master’s degree.<br />
-                            Two semesters in the university with :<br />
-                            - English classes to improve my communications skills.<br />
+                            Two semesters at the university with :<br />
+                            - English classes to improve my communication skills.<br />
                             - Computer-science classes to learn more about some aspects of software development: <br />
                             <ul>
                                 <li>Cyber-security</li>
@@ -217,64 +236,37 @@
             <!-- Projects-->
             <section id="projects" class="section section-impair">
                 <h1 class="section-title">Projects</h1>
-                <!-- Creates the bootstrap modal where the image will appear -->
-                <div class="modal fade" id="imagemodal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
-                    aria-hidden="true">
-                    <div class="modal-dialog">
-                        <div class="modal-content">
-                            <div class="modal-header">
-                                <button type="button" class="close" data-dismiss="modal">
-                                    <span aria-hidden="true">&times;</span>
-                                    <span class="sr-only">Close</span></button>
-                                <h4 class="modal-title" id="myModalLabel"></h4>
-                            </div>
-                            <div class="modal-body">
-                                <img src="" id="imagepreview">
-                            </div>
-                            <div class="modal-footer">
-                                <div class="modal-menu text-center">
-                                    <button class="btn btn-primary" onclick="previousPicture()" title="Previous picture"><i
-                                            class="fas fa-chevron-left"></i></button>
-                                    <button class="btn btn-primary" onclick="nextPicture()" title="Next picture"><i
-                                            class="fas fa-chevron-right"></i></button>
-                                </div>
-                                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
                 <div class="project row">
                     <div class="col-lg-6">
                         <h3>Space citizen</h3>
-                        <h5>An online space shooter game. Similar to <a href="https://www.darkorbit.com" target="_blank">Dark-Orbit</a>.</h5>
+                        <h5>An online space shooter game. Similar to <a href="https://www.darkorbit.com" target="_blank" rel="noreferrer noopener">Dark-Orbit</a>.</h5>
                         <br />
                         <p>
                             A fun project made with two other EPITECH students.
                         </p>
                         <p>
-                            The goal of the game is to detroy other players or NPCs to gain money and upgrade your
+                            The goal of the game is to fight other players or NPCs to gain money and upgrade your
                             ship.
                         </p>
                         <p>
-                            There is multiple solar systems where the users can travel and fight.
+                            There are multiple solar systems where the users can travel and fight.
                         </p>
                         <p>
                             The textures are based on the science fiction franchise 'Stargate'.
                         </p>
                         <div class="links">
-                            <a href="https://github.com/Space-Citizen/space-citizen" target="_blank" title="Dicover this project on Github !"><i
-                                    class="fab fa-github-square"></i></a>
+                            <a href="https://github.com/Space-Citizen/space-citizen" target="_blank" title="Dicover this project on Github !" rel="noreferrer noopener"><i class="fab fa-github-square"></i></a>
                         </div>
                     </div>
                     <div class="galery col-lg-6">
                         <table class="table border-less-table">
                             <tr>
-                                <td><button class="galery-picture-btn"><img src="images/projects/space-citizen/image1.jpg" /></button></td>
-                                <td><button class="galery-picture-btn"><img src="images/projects/space-citizen/image2.jpg" /></button></td>
+                                <td><button class="galery-picture-btn"><img src="images/projects/space-citizen/image1-small.jpg" alt="space-citizen" /></button></td>
+                                <td><button class="galery-picture-btn"><img src="images/projects/space-citizen/image2-small.jpg" alt="space-citizen" /></button></td>
                             </tr>
                             <tr>
-                                <td><button class="galery-picture-btn"><img src="images/projects/space-citizen/image3.jpg" /></button></td>
-                                <td><button class="galery-picture-btn"><img src="images/projects/space-citizen/image4.jpg" /></button></td>
+                                <td><button class="galery-picture-btn"><img src="images/projects/space-citizen/image3-small.jpg" alt="space-citizen" /></button></td>
+                                <td><button class="galery-picture-btn"><img src="images/projects/space-citizen/image4-small.jpg" alt="space-citizen" /></button></td>
                             </tr>
                         </table>
                     </div>
@@ -282,7 +274,7 @@
                 <div class="project row">
                     <div class="col-lg-6">
                         <h3>Showcas3D</h3>
-                        <h5>A website linking 3d designers and recruiters.</h5>
+                        <h5>A website linking 3d artists and recruiters.</h5>
                         <br />
                         <p>Showcas3D offer a place for 3D artists to display their skills and gives them a chance to
                             find a job !
@@ -297,19 +289,18 @@
                         </p>
                         <span><i>Project still in development.</i></span>
                         <div class="links">
-                            <a href="https://showcas3d.tk" target="_blank" title="Discover this project online !"><i
-                                    class="fas fa-link"></i></a>
+                            <a href="https://showcas3d.tk" target="_blank" title="Discover this project online !" rel="noreferrer noopener"><i class="fas fa-link"></i></a>
                         </div>
                     </div>
                     <div class="galery col-lg-6">
                         <table class="table border-less-table">
                             <tr>
-                                <td><button class="galery-picture-btn"><img src="images/projects/showcas3d/image1.jpg" /></button></td>
-                                <td><button class="galery-picture-btn"><img src="images/projects/showcas3d/image2.jpg" /></button></td>
+                                <td><button class="galery-picture-btn"><img src="images/projects/showcas3d/image1-small.jpg" alt="showcas3d" /></button></td>
+                                <td><button class="galery-picture-btn"><img src="images/projects/showcas3d/image2-small.jpg" alt="showcas3d" /></button></td>
                             </tr>
                             <tr>
-                                <td><button class="galery-picture-btn"><img src="images/projects/showcas3d/image3.jpg" /></button></td>
-                                <td><button class="galery-picture-btn"><img src="images/projects/showcas3d/image4.jpg" /></button></td>
+                                <td><button class="galery-picture-btn"><img src="images/projects/showcas3d/image3-small.jpg" alt="showcas3d" /></button></td>
+                                <td><button class="galery-picture-btn"><img src="images/projects/showcas3d/image4-small.jpg" alt="showcas3d" /></button></td>
                             </tr>
                         </table>
                     </div>
@@ -319,32 +310,31 @@
                         <h3>HackerRank</h3>
                         <h5>Competitive programming in C++, C, Java, SQL and Javascript</h5>
                         <br />
-                        <p>I trained a lot on HackerRank to prepare for technical interviews.<br />
+                        <p>I've trained a lot on HackerRank to prepare for technical interviews.<br />
                             I also used this website to challenge myself to do the best and fastest code possible.</p>
                         <div class="links">
-                            <a href="https://www.hackerrank.com/antoine_gannat" target="_blank" title="Discover this project online !"><i
-                                    class="fas fa-link"></i></a>
+                            <a href="https://www.hackerrank.com/antoine_gannat" target="_blank" title="Discover this project online !" rel="noreferrer noopener"><i class="fas fa-link"></i></a>
                         </div>
                     </div>
                     <div class="galery col-lg-6">
                         <table class="table border-less-table">
                             <tr>
-                                <td><button class="galery-picture-btn"><img src="images/projects/hackerrank/image1.jpg" /></button></td>
+                                <td><button class="galery-picture-btn"><img src="images/projects/hackerrank/image1-small.jpg" alt="hackerrank" /></button></td>
                             </tr>
                         </table>
                     </div>
                 </div>
-                <h4 class="text-center">Find more of my projects on <a href="https://github.com/antoine-gannat" target="_blank"
-                        title="My github account">Github</a> !</h4>
+                <h4 class="text-center">Find more of my projects on <a href="https://github.com/antoine-gannat" target="_blank" title="My github account" rel="noreferrer noopener">Github</a> !</h4>
             </section>
             <!-- Skills -->
             <section id="skills" class="section section-pair">
                 <h1 class="section-title">Skills</h1>
-                <div class="">
-                    <div>
-                        <h2>Programming</h2>
-                        <h4>Languages : </h4>
-                        <table class="table text-center border-less-table skills-table" cellspacing="0" cellpadding="0">
+                <div>
+                    <div class="skills-list row">
+                        <div class="skill-table-name col-lg-2">
+                            Programming Languages
+                        </div>
+                        <table class="table text-center border-less-table col-lg-10 skill-table" cellspacing="0" cellpadding="0">
                             <tbody>
                                 <tr class="row">
                                     <td class="col-4">C++/C</td>
@@ -363,8 +353,12 @@
                                 </tr>
                             </tbody>
                         </table>
-                        <h4>Libraries / Softwares : </h4>
-                        <table class="table text-center border-less-table skills-table" cellspacing="0" cellpadding="0">
+                    </div>
+                    <div class="skills-list row">
+                        <div class="skill-table-name col-lg-2">
+                            Libraries and Softwares
+                        </div>
+                        <table class="table text-center col-lg-10 border-less-table skill-table" cellspacing="0" cellpadding="0">
                             <tbody>
                                 <tr class="row">
                                     <td class="col-4">GNU/Linux</td>
@@ -384,23 +378,25 @@
                                 <tr class="row">
                                     <td class="col-4">QT</td>
                                     <td class="col-4">Zigbee</td>
-                                    <td class="col-4">Embedded systems</td>
+                                    <td class="col-4">Swagger / Openapi 3</td>
                                 </tr>
                             </tbody>
                         </table>
                     </div>
-                    <hr />
-                    <div>
-                        <h2>Languages <span>(fluent)</span></h3>
-                            <table class="table text-center border-less-table skills-table" cellspacing="0" cellpadding="0">
-                                <tbody>
-                                    <tr>
-                                        <td>French</td>
-                                        <td>English</td>
-                                    </tr>
-                                </tbody>
-                            </table>
+                </div>
+                <hr />
+                <div class="skills-list row">
+                    <div class="skill-table-name col-lg-2">
+                        Fluent Languages
                     </div>
+                    <table class="table text-center col-lg-10 border-less-table skill-table" cellspacing="0" cellpadding="0">
+                        <tbody>
+                            <tr class="row">
+                                <td class="col-6">French</td>
+                                <td class="col-6">English</td>
+                            </tr>
+                        </tbody>
+                    </table>
                 </div>
             </section>
             <!-- Contact-->
@@ -408,13 +404,13 @@
                 <h1 class="section-title">Contact informations</h1>
                 <div class="contact-div text-center">
                     <div>
-                        <i class="fas fa-at"></i><span>antoine.gannat@gmail.com</span>
+                        <i class="fas fa-envelope contact-icon"></i><span>antoine.gannat@gmail.com</span>
                     </div>
                     <div>
-                        <i class="fas fa-phone-alt"></i> <span>(+33)06 32 76 83 60</span><br />
+                        <i class="fas fa-phone-alt contact-icon"></i> <span>(+33)06 32 76 83 60</span><br />
                     </div>
                     <div>
-                        <i class="fas fa-map-marker-alt"></i>
+                        <i class="fas fa-map-marker-alt contact-icon"></i>
                         <span class="address">13 Rue Emile Souvestre, 29200 BREST. France</span><br />
                     </div>
                 </div>
@@ -425,86 +421,12 @@
             </footer>
         </main>
     </div>
-    <!-- Bootstrap dependencies -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-        crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
-        crossorigin="anonymous"></script>
-    <!-- Bootstrap script -->
-    <script src="js/bootstrap.min.js"></script>
-    <script>
-        // Get every galery button
-        let buttons = document.getElementsByClassName("galery-picture-btn");
-        let originGalery = null;
-        // For each button
-        for (let i = 0; i < buttons.length; i++) {
-            // add event listener on click
-            buttons[i].addEventListener('click', popModal);
-        }
-        // Display the picture in a modal in bigger
-        function popModal(e) {
-            // If the event path is empty
-            if (e.path.length === 0)
-                return;
-            // Set the image
-            $("#imagepreview").attr("src", e.path[0].src);
-            // Show the modal
-            $('#imagemodal').modal('show')
-            // Save the images in the selected galery
-            originGalery = e.path[4].getElementsByTagName('img');
-        }
-
-        function nextPicture() {
-            if (!originGalery || !$("#imagepreview"))
-                return;
-
-            // for each image in this galery
-            for (let i = 0; i < originGalery.length; i++) {
-                // if this image is the one that is displayed in the modal
-                if (originGalery[i].src === $("#imagepreview").attr("src")) {
-                    // Display the next one
-                    let newImg;
-                    if (i + 1 >= originGalery.length) {
-                        // if it's the last image of the galery, display the first one
-                        newImg = originGalery[0];
-                    }
-                    else {
-                        // display the next one
-                        newImg = originGalery[i + 1];
-                    }
-                    // update the image
-                    $("#imagepreview").attr("src", newImg.src);
-                    return;
-                }
-            }
-        }
-
-        function previousPicture() {
-            if (!originGalery || !$("#imagepreview"))
-                return;
-
-            // for each image in this galery
-            for (let i = 0; i < originGalery.length; i++) {
-                // if this image is the one that is displayed in the modal
-                if (originGalery[i].src === $("#imagepreview").attr("src")) {
-                    // Display the next one
-                    let newImg;
-                    if (i - 1 < 0) {
-                        // if it's the first image of the galery, display the last one
-                        newImg = originGalery[originGalery.length - 1];
-                    }
-                    else {
-                        // display the previous one
-                        newImg = originGalery[i - 1];
-                    }
-                    // update the image
-                    $("#imagepreview").attr("src", newImg.src);
-                    return;
-                }
-
-            }
-        }
-    </script>
+    <!-- Bootstrap and bootstrap dependencies -->
+    <script src="./js/lib/jquery-3.3.1.slim.min.js"></script>
+    <script src="./js/lib/popper.min.js"></script>
+    <script src="./js/lib/bootstrap.min.js"></script>
+    <!-- Project visualizer -->
+    <script src="./js/visualizer.js"></script>
 </body>
 
 </html>
